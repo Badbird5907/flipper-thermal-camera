@@ -4356,107 +4356,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x08")
-		(at 62.23 48.26 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0be4efea-4bd2-4bf3-8937-519a61ae379f")
-		(property "Reference" "J1"
-			(at 59.69 48.2599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x08"
-			(at 59.69 50.7999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
-			(at 62.23 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 62.23 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c598692d-ac20-43a9-82df-9e0b9b448272")
-		)
-		(pin "3"
-			(uuid "a901e3e8-2713-4909-a61b-8c3294967fc1")
-		)
-		(pin "4"
-			(uuid "21c6f08a-66fa-445d-b3f4-308be84186f9")
-		)
-		(pin "5"
-			(uuid "cfa4f456-0098-46d5-96cd-848080852287")
-		)
-		(pin "6"
-			(uuid "c6ad5ed2-33ee-4002-ab89-3f1dd2810bf8")
-		)
-		(pin "8"
-			(uuid "c4ceaa52-bf71-40c4-8297-b017684012e2")
-		)
-		(pin "2"
-			(uuid "02bd7349-134c-4827-bbfd-97acd4d660d7")
-		)
-		(pin "7"
-			(uuid "06e51a5f-9e72-4fb4-ac7c-3192318cdd75")
-		)
-		(instances
-			(project "flipper-thermal-camera"
-				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Linear:XC6206PxxxMR")
 		(at 105.41 43.18 0)
 		(unit 1)
@@ -5410,6 +5309,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x10")
+		(at 62.23 87.63 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4fb03166-6cd2-4900-aca5-d246b3119afe")
+		(property "Reference" "J2"
+			(at 62.23 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x10"
+			(at 62.23 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Horizontal"
+			(at 62.23 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 62.23 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "9"
+			(uuid "f5376d50-f32f-472e-a17e-5dd8600cd97f")
+		)
+		(pin "2"
+			(uuid "fc5dcf6e-da45-4de2-b24b-0829fd77d7d2")
+		)
+		(pin "7"
+			(uuid "06268c51-4b74-4008-a4cc-d9e52443b8c6")
+		)
+		(pin "10"
+			(uuid "677a6129-5190-4926-a251-92d8508d9a9b")
+		)
+		(pin "3"
+			(uuid "085f2aca-d1d3-4d48-8cb5-54efb07045a9")
+		)
+		(pin "5"
+			(uuid "ea0878cc-c6ee-4941-802e-429b71d45b18")
+		)
+		(pin "4"
+			(uuid "94637681-eb3a-4efc-b548-a005218ac32f")
+		)
+		(pin "1"
+			(uuid "f91d485b-7b55-44d1-8a9f-aa139581837f")
+		)
+		(pin "6"
+			(uuid "5c856433-8705-4deb-965c-16f393a27fbb")
+		)
+		(pin "8"
+			(uuid "eeb433f1-dbed-4251-921e-8b780ef6c328")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 69.85 139.7 270)
 		(unit 1)
@@ -6043,6 +6045,103 @@
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x08")
+		(at 62.23 50.8 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7042c601-a42f-4762-95b2-803042baeafc")
+		(property "Reference" "J1"
+			(at 62.23 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x08"
+			(at 62.23 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal"
+			(at 62.23 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 62.23 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00c14da2-f94a-40b0-bc53-b999515a11ed")
+		)
+		(pin "3"
+			(uuid "43cbbbb5-ae90-4a11-838b-9fd755c46a80")
+		)
+		(pin "4"
+			(uuid "0ba5c2fa-e7a7-48c0-bb0f-b88cd437496c")
+		)
+		(pin "5"
+			(uuid "57fc15a7-1235-45a2-8acf-0a84c0df26ce")
+		)
+		(pin "6"
+			(uuid "4833861f-8ab6-4dbc-926c-7e4c79ac632a")
+		)
+		(pin "8"
+			(uuid "8119c6df-e540-40cb-99a9-146a2cd0a2d2")
+		)
+		(pin "2"
+			(uuid "60fa8518-6cff-4a0f-99b3-6464da932c25")
+		)
+		(pin "7"
+			(uuid "cd7827f3-7960-4a4a-bbc4-9adeeec5bb69")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -7605,113 +7704,6 @@
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x10")
-		(at 62.23 85.09 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ca20fd6b-a3be-4757-859e-029770a11dbc")
-		(property "Reference" "J2"
-			(at 59.69 85.0899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x10"
-			(at 59.69 87.6299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical"
-			(at 62.23 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 62.23 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "9"
-			(uuid "0617c682-3fff-4cd5-948a-df8808942942")
-		)
-		(pin "2"
-			(uuid "ed97e38d-3284-4c53-a193-356eea325b46")
-		)
-		(pin "7"
-			(uuid "c5990099-d965-4f70-8d26-5f1a7943d74f")
-		)
-		(pin "10"
-			(uuid "bfcc5560-2f76-4cd1-9124-63cdd470be7c")
-		)
-		(pin "3"
-			(uuid "2d9f4100-fbbf-4619-a314-472c28046c42")
-		)
-		(pin "5"
-			(uuid "50f270c8-15ec-4386-97b5-69babf4a2208")
-		)
-		(pin "4"
-			(uuid "1099bf0d-5565-433a-b3f1-002870adeb6f")
-		)
-		(pin "1"
-			(uuid "2e7c4bbb-1989-4637-afc1-fcab63e572df")
-		)
-		(pin "6"
-			(uuid "5775fa72-5e79-4536-adde-ecd647beeb21")
-		)
-		(pin "8"
-			(uuid "7b371043-4276-43a3-9716-17172a5913a7")
-		)
-		(instances
-			(project "flipper-thermal-camera"
-				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "J2")
 					(unit 1)
 				)
 			)

@@ -9,3 +9,9 @@ The reason why we don't use the Flipper's 3.3v line is because the flipper's SD 
 
 I also added 2.2k pull-up resistors for the I2C lines, and some LEDs to indicate the power status.
 Next i'm going to add some other sensors, like a ambient light sensor.
+
+# 05/10
+
+I finished the schematic. I added a light sensor (SHT31), an ambient light sensor (VEML7700), and a IMU (ICM-20948) which alos includes a 3-axis compass.
+
+I'm now working on designing and laying out the PCB.
