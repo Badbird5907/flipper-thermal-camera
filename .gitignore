@@ -1,0 +1,5 @@
+PCB/flipper-thermal-camera-backups/
+PCB/flipper-thermal-camera-backups/*.zip
+PCB/jlcpcb/
+PCB/*.lck
+PCB/_autosave*
