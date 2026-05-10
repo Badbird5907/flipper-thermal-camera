@@ -15,3 +15,7 @@ Next i'm going to add some other sensors, like a ambient light sensor.
 I finished the schematic. I added a light sensor (SHT31), an ambient light sensor (VEML7700), and a IMU (ICM-20948) which alos includes a 3-axis compass.
 
 I'm now working on designing and laying out the PCB.
+---
+I've finished placing components and routing the PCB. I'll spend the next few days refining the design and adding other things too 
+
+![img](https://cdn.hackclub.com/019e10e4-ce4c-7e44-921d-279c907bfae1/image.png)
