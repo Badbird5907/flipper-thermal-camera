@@ -29,3 +29,10 @@ Just spent a stupid amount of time fixing the edge.cuts layer and adding rounded
 I finished up the PCB design and added some testpoints. Next, i'll work on sourcing the parts, and then i'll design the case.
 
 ![pcb render](https://cdn.hackclub.com/019e1318-7207-750a-850a-dd007c84f362/image.png)
+
+# 05/18
+
+I sourced all the parts and created a bom (BOM.csv). I also had to spend some time reworking the connector in the schematic, but we're good to go now :)
+
+Next, i'm going to get started on the flipper app
+Btw, i've decided against designing a case, as it kind of goes against the flipper's aesthetic (especially mine, which has a clear case mod). Most pcb mods on top have no case to showcase the PCB, so I think it's best if I just don't make one.

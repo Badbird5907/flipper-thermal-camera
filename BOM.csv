@@ -1,0 +1,22 @@
+Index,LCSC#,MPN,Manufacturer,Package,Customer #,Description,RoHS,Quantity,MOQ,Multiple,Unit Price($),Extended Price($),Product Link
+1,C114555,RC0805FR-071K5L,YAGEO,805,,125mW 1.5kΩ 150V Thick Film Resistor ±100ppm/℃ ±1% 0805 Chip Resistor - Surface Mount RoHS,yes,100,100,100,0.0028,0.28,https://www.lcsc.com/product-detail/C114555.html
+2,C28233,CL21B104KCFNNNE,Samsung Electro-Mechanics,805,,100nF ±10% 100V Ceramic Capacitor X7R 0805,yes,50,50,50,0.0108,0.54,https://www.lcsc.com/product-detail/C28233.html
+3,C25612,0805W8J0103T5E,UNI-ROYAL,805,,10kΩ ±5% 125mW 0805 Thick Film Resistor,yes,100,100,100,0.0019,0.19,https://www.lcsc.com/product-detail/C25612.html
+4,C1712,CL21B105KAFNFNE,Samsung Electro-Mechanics,805,,1uF ±10% 25V Ceramic Capacitor X7R 0805,yes,50,50,50,0.0153,0.77,https://www.lcsc.com/product-detail/C1712.html
+5,C26017,0805W8J0222T5E,UNI-ROYAL,805,,2.2kΩ ±5% 125mW 0805 Thick Film Resistor,yes,100,100,100,0.0021,0.21,https://www.lcsc.com/product-detail/C26017.html
+6,C1779,CL21A475KAQNNNE,Samsung Electro-Mechanics,805,,4.7uF ±10% 25V Ceramic Capacitor X5R 0805,yes,20,20,20,0.0157,0.31,https://www.lcsc.com/product-detail/C1779.html
+7,C726001,ICM-20948,TDK InvenSense,QFN-24(3x3),,QFN-24(3x3) IMUs (Inertial Measurement Units) RoHS,yes,1,1,1,11.6045,11.6,https://www.lcsc.com/product-detail/C726001.html
+8,C2297,KT-0805G,Hubei KENTO Elec,805,,Emerald Green 525nm LED Indication - Discrete 2.6V~3.1V 0805,yes,50,50,50,0.0163,0.82,https://www.lcsc.com/product-detail/C2297.html
+9,C84256,NCD0805R1,NATIONSTAR,805,,Red 630nm LED Indication - Discrete 1.6V~2.6V 0805,yes,50,50,50,0.0134,0.67,https://www.lcsc.com/product-detail/C84256.html
+10,C17380659,MLX90640ESF-BAA-000-TU,Melexis,TO-39,,"TO-39 Image Sensors, Camera RoHS",yes,1,1,1,24.0552,24.06,https://www.lcsc.com/product-detail/C17380659.html
+11,C51901043,FHT31-TR,Nyfea,DFN-8(2.5x2.5),,"±2%RH -45℃~+130℃ 0%RH~100%RH I2C DFN-8(2.5x2.5) Humidity, Moisture Sensors RoHS",yes,1,1,1,1.6056,1.61,https://www.lcsc.com/product-detail/C51901043.html
+12,C5446,XC6206P332MR-G,TOREX,SOT-23-3L,,"3.3V Positive Fixed SOT-23-3L Voltage Regulators - Linear, Low Drop Out (LDO) Regulators RoHS",yes,5,5,5,0.1119,0.56,https://www.lcsc.com/product-detail/C5446.html
+13,C492416,PZ254R-11-08P,XFCN,"Through Hole,Right Angle,P=2.54mm",,"Pin Header 8 Position 2.54mm Pitch Single Row Through Hole, Right Angle -40℃~+105℃",yes,10,10,10,0.0497,0.5,https://www.lcsc.com/product-detail/C492416.html
+14,C492418,PZ254R-11-10P,XFCN,"Through Hole,Right Angle,P=2.54mm",,"Pin Header 10 Position 2.54mm Pitch Single Row Through Hole, Right Angle -40℃~+105℃",yes,10,10,10,0.0699,0.7,https://www.lcsc.com/product-detail/C492418.html
+15,C504893,VEML7700-TR,VISHAY,SMD-4P,,"I2C 2.5V~3.6V SMD-4P Ambient Light, IR, UV Sensors RoHS",yes,1,1,1,0.7128,0.71,https://www.lcsc.com/product-detail/C504893.html
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+JLCPCB,3.2,,,,,,,,,,,,
+   + SHIPPING,1.5,,,,,,,,,,,,
+LCSC SHIPPING,12.74,,,,,,,,,,,,
+TOTAL COST,60.97,USD,,,,,,,,,,,
