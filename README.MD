@@ -15,6 +15,7 @@ It uses two 90-degree header pins to connect to the flipper zero's GPIO.
 
 ![render](https://i.imgur.com/VbunBRB.png)
 ![pcb](https://i.imgur.com/DS2qZjv.png)
+![schematic](https://i.imgur.com/972ToW5.png)
 
 **Why no case?** Most flipper PCB mods don't use a case to show off the PCB. I think it especially goes better with my flipper as it has a clear case mod.
 
