@@ -35,4 +35,10 @@ I finished up the PCB design and added some testpoints. Next, i'll work on sourc
 I sourced all the parts and created a bom (BOM.csv). I also had to spend some time reworking the connector in the schematic, but we're good to go now :)
 
 Next, i'm going to get started on the flipper app
+
 Btw, i've decided against designing a case, as it kind of goes against the flipper's aesthetic (especially mine, which has a clear case mod). Most pcb mods on top have no case to showcase the PCB, so I think it's best if I just don't make one.
+
+# 05/19
+
+Okay, I think this is as far as I can get it until I get the PCB manufactured and built. There's some sample code that probably won't work in [flipper-app](/flipper-app)
+
