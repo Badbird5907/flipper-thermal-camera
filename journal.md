@@ -42,3 +42,20 @@ Btw, i've decided against designing a case, as it kind of goes against the flipp
 
 Okay, I think this is as far as I can get it until I get the PCB manufactured and built. There's some sample code that probably won't work in [flipper-app](/flipper-app)
 
+# 05/24
+
+Updated the silkscreen with a better/larger stylized "title" inspired by the video game module.
+This took over 2-3 hours to do because I had first designed it in affinity designer.
+After fiddling around with vectors, I finally got something that looks half-decent. Importing the vector into KiCad was the hardest part.
+Importing it directly into KiCad made the black background take over the white text (kind of a skill issue on my part). The closest I got 
+was to convert the SVG into a DXF and importing that. It gave me a outline but no background.
+I then spent the next hour fiddling around with the DXF in autodesk trying to fill in the text, but nothing really looked good (DXF conversion
+dropped the curve resolution too much).
+
+I finally gave up and imported a SVG of the border only into KiCad, then used the Text tool to add the text (Knockout on), and then used the
+polygon tool to fill in the border. Not the best solution, but it's the best I could come up with.
+
+![affinity](https://cdn.badbird.dev/screenshots/2026/05/EuB7UVnwpR.png)
+
+![KiCad](https://cdn.badbird.dev/screenshots/2026/05/kicad_N1ELNynZlO.png)
+![Render](https://cdn.badbird.dev/screenshots/2026/05/x0WOQAGFxs.png)
