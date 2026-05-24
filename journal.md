@@ -57,5 +57,5 @@ polygon tool to fill in the border. Not the best solution, but it's the best I c
 
 ![affinity](https://cdn.badbird.dev/screenshots/2026/05/EuB7UVnwpR.png)
 
-![KiCad](https://cdn.badbird.dev/screenshots/2026/05/kicad_N1ELNynZlO.png)
-![Render](https://cdn.badbird.dev/screenshots/2026/05/x0WOQAGFxs.png)
+![KiCad](https://cdn.badbird.dev/screenshots/2026/05/zjmn41jP9w.png)
+![Render](https://cdn.badbird.dev/screenshots/2026/05/WPVof91aNT.png)
