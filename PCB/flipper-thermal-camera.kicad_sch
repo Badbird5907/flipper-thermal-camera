@@ -1005,6 +1005,194 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -1788,6 +1976,973 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "SP1001-05JTG:SP1001-05JTG"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -5.08 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "SP1001-05JTG"
+				(at -5.08 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "SP1001-05JTG:SOP65P220X110-6N"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "13V Clamp 2A (8/20µs) Ipp Tvs Diode Surface Mount SC-70-6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MF" "Littelfuse Inc."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "1.1mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Package" "SC-70-6 Littelfuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/SP1001-05JTG/Littelfuse/view-part/?ref=eda"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "STANDARD" "IPC-7351B"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "PARTREV" "GD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/SP1001-05JTG/Littelfuse/view-part/?ref=snap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MP" "SP1001-05JTG"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=491437&manufacturer=Littelfuse Inc.&part_name=SP1001-05JTG&search_term=sp1001-05"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "MANUFACTURER" "Littelfuse"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(symbol "SP1001-05JTG_0_0"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy -3.81 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -5.08) (xy -3.81 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 5.715) (xy -4.445 6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 5.08) (xy -3.81 5.715)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 5.08) (xy -1.27 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 4.445) (xy -3.81 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -4.445) (xy -4.445 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -5.08) (xy -3.81 -4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -5.08) (xy -1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -5.715) (xy -3.81 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 3.81) (xy -3.81 4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -6.35) (xy -3.81 -5.715)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 6.35) (xy -3.81 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 5.08) (xy -1.27 6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 5.08) (xy 0 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.81) (xy -1.27 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -3.81) (xy -3.81 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy -1.27 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy 0 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -6.35) (xy -1.27 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 5.08)
+					(radius 0.254)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 1.27 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.254)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 1.27 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -5.08)
+					(radius 0.254)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 6.35) (xy 1.27 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 1.27 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.81) (xy 3.81 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 3.81 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.81) (xy 1.27 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 1.27 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -6.35) (xy 3.81 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 6.35) (xy 3.81 5.715)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 1.27) (xy 3.81 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -3.81) (xy 3.81 -4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 5.715) (xy 3.81 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 5.08) (xy 1.27 6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 5.08) (xy 3.81 4.445)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 4.445) (xy 4.445 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0.635) (xy 3.81 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 3.81 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -0.635) (xy 4.445 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -4.445) (xy 3.81 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -5.08) (xy 1.27 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -5.08) (xy 3.81 -5.715)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -5.715) (xy 4.445 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 5.08) (xy 3.81 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -5.08) (xy 3.81 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 5.08 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -5.08 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Sensor_Humidity:SHT31-DIS"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2049,7 +3204,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Sensor_Motion:ICM-20948"
+		(symbol "Sensor_Motion:BNO055"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2063,20 +3218,34 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
-			(property "Value" "ICM-20948"
-				(at 7.62 -16.51 0)
+			(property "Value" "BNO055"
+				(at 12.7 16.51 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
-			(property "Footprint" "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm"
-				(at 0 -25.4 0)
+			(property "Footprint" "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm"
+				(at 6.35 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bno055-ds000.pdf"
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2086,18 +3255,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "http://www.invensense.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "InvenSense 9-Axis Motion Sensor, Accelerometer, Gyroscope, Compass, I2C/SPI, QFN-24"
+			(property "Description" "Intelligent 9-axis absolute orientation sensor, LGA-28"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2108,7 +3266,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "mems magnetometer"
+			(property "ki_keywords" "IMU Fusion I2C UART"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2119,7 +3277,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "InvenSense?QFN*3x3mm*P0.4mm*"
+			(property "ki_fp_filters" "LGA*5.2x3.8mm*P0.5mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2130,10 +3288,10 @@
 					)
 				)
 			)
-			(symbol "ICM-20948_0_1"
+			(symbol "BNO055_0_1"
 				(rectangle
-					(start -10.16 15.24)
-					(end 10.16 -15.24)
+					(start -12.7 15.24)
+					(end 12.7 -15.24)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2143,12 +3301,12 @@
 					)
 				)
 			)
-			(symbol "ICM-20948_1_1"
+			(symbol "BNO055_1_1"
 				(pin no_connect line
-					(at -10.16 12.7 0)
+					(at -12.7 10.16 0)
 					(length 2.54)
 					(hide yes)
-					(name "NC"
+					(name "PIN1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2163,11 +3321,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -10.16 10.16 0)
+				(pin power_in line
+					(at -2.54 -17.78 90)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2182,11 +3339,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -10.16 -2.54 0)
+				(pin power_in line
+					(at -2.54 17.78 270)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2201,11 +3357,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -10.16 -10.16 0)
+				(pin input line
+					(at -15.24 2.54 0)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name "~{BOOT_LOAD_PIN}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2220,11 +3375,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -10.16 -12.7 0)
+				(pin input line
+					(at 15.24 -10.16 180)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name "PS1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2239,11 +3393,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 10.16 10.16 180)
+				(pin input line
+					(at 15.24 -7.62 180)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name "PS0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2258,10 +3411,11 @@
 						)
 					)
 				)
-				(pin output line
-					(at 12.7 0 180)
+				(pin no_connect line
+					(at -12.7 5.08 0)
 					(length 2.54)
-					(name "AUX_CL"
+					(hide yes)
+					(name "PIN7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2276,10 +3430,11 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -2.54 17.78 270)
+				(pin no_connect line
+					(at -12.7 -2.54 0)
 					(length 2.54)
-					(name "VDDIO"
+					(hide yes)
+					(name "PIN8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2294,10 +3449,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 7.62 0)
+				(pin passive line
+					(at 15.24 -12.7 180)
 					(length 2.54)
-					(name "SDO/AD0"
+					(name "CAP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2312,10 +3467,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 12.7 -5.08 180)
+				(pin output line
+					(at -15.24 0 0)
 					(length 2.54)
-					(name "REGOUT"
+					(name "BL_IND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2331,9 +3486,9 @@
 					)
 				)
 				(pin input line
-					(at -12.7 -5.08 0)
+					(at -15.24 12.7 0)
 					(length 2.54)
-					(name "FSYNC"
+					(name "~{RESET}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2348,10 +3503,11 @@
 						)
 					)
 				)
-				(pin output line
-					(at -12.7 -7.62 0)
+				(pin no_connect line
+					(at 12.7 10.16 180)
 					(length 2.54)
-					(name "INT1"
+					(hide yes)
+					(name "PIN12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2366,10 +3522,11 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 2.54 17.78 270)
+				(pin no_connect line
+					(at 12.7 7.62 180)
 					(length 2.54)
-					(name "VDD"
+					(hide yes)
+					(name "PIN13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2384,11 +3541,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 10.16 7.62 180)
+				(pin output line
+					(at -15.24 7.62 0)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name "INT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2404,10 +3560,10 @@
 					)
 				)
 				(pin no_connect line
-					(at 10.16 5.08 180)
+					(at 5.08 -15.24 90)
 					(length 2.54)
 					(hide yes)
-					(name "NC"
+					(name "PIN15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2423,10 +3579,10 @@
 					)
 				)
 				(pin no_connect line
-					(at 10.16 -7.62 180)
+					(at 7.62 -15.24 90)
 					(length 2.54)
 					(hide yes)
-					(name "NC"
+					(name "PIN16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2441,11 +3597,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 10.16 -10.16 180)
+				(pin input line
+					(at -15.24 -12.7 0)
 					(length 2.54)
-					(hide yes)
-					(name "NC"
+					(name "COM3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2460,10 +3615,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -17.78 90)
+				(pin passive line
+					(at -15.24 -10.16 0)
 					(length 2.54)
-					(name "GND"
+					(name "COM2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2478,11 +3633,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 10.16 -12.7 180)
+				(pin bidirectional line
+					(at -15.24 -7.62 0)
 					(length 2.54)
-					(hide yes)
-					(name "RESV"
+					(name "COM1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2497,11 +3651,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -17.78 90)
+				(pin bidirectional line
+					(at -15.24 -5.08 0)
 					(length 2.54)
-					(hide yes)
-					(name "GND"
+					(name "COM0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2516,10 +3669,11 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 12.7 2.54 180)
+				(pin no_connect line
+					(at 12.7 5.08 180)
 					(length 2.54)
-					(name "AUX_DA"
+					(hide yes)
+					(name "PIN21"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2534,10 +3688,11 @@
 						)
 					)
 				)
-				(pin input line
-					(at -12.7 0 0)
+				(pin no_connect line
+					(at 12.7 2.54 180)
 					(length 2.54)
-					(name "~{CS}"
+					(hide yes)
+					(name "PIN22"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2552,10 +3707,11 @@
 						)
 					)
 				)
-				(pin input line
-					(at -12.7 2.54 0)
+				(pin no_connect line
+					(at 12.7 -2.54 180)
 					(length 2.54)
-					(name "SCL/SCLK"
+					(hide yes)
+					(name "PIN23"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2570,10 +3726,11 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -12.7 5.08 0)
+				(pin no_connect line
+					(at 12.7 -5.08 180)
 					(length 2.54)
-					(name "SDA/SDI"
+					(hide yes)
+					(name "PIN24"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2581,6 +3738,78 @@
 						)
 					)
 					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -17.78 90)
+					(length 2.54)
+					(name "GNDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 12.7 180)
+					(length 2.54)
+					(name "XOUT32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "XIN32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 17.78 270)
+					(length 2.54)
+					(name "VDDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3198,28 +4427,34 @@
 		)
 	)
 	(junction
-		(at 133.35 119.38)
+		(at 189.23 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3ec8cec0-c9a0-4cd6-a4a9-9c3c03c21538")
+		(uuid "0e4110b0-0e66-428e-872f-0efd4b203d70")
 	)
 	(junction
-		(at 91.44 43.18)
+		(at 177.8 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4416c58e-33c2-4054-9dfe-85957f3dcc2a")
+		(uuid "26996113-7e1d-4923-a394-94b75ea217dd")
+	)
+	(junction
+		(at 177.8 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29ff9df4-2205-4de6-a5cd-a44f04a4a873")
 	)
 	(junction
 		(at 182.88 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5211d576-1e4d-4e4f-bb48-40ca4557d138")
+		(uuid "2ad8f04a-9e35-4ab4-b26d-1bedf519f620")
 	)
 	(junction
-		(at 120.65 43.18)
+		(at 182.88 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "57d6d68d-ee5c-4634-94f9-b8d596c2391a")
+		(uuid "5a3b4ef4-1d31-4cac-adf1-b2a142205099")
 	)
 	(junction
 		(at 121.92 72.39)
@@ -3228,38 +4463,58 @@
 		(uuid "63676acb-0493-4700-9917-ded69398954b")
 	)
 	(junction
-		(at 118.11 43.18)
+		(at 109.22 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "67709f99-a380-4570-87e6-4af990cd9fae")
 	)
 	(junction
-		(at 151.13 106.68)
+		(at 185.42 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "869ca18a-d413-4769-ac58-72f157b4d45e")
+		(uuid "692676e0-eff0-4f15-87c0-472bcb730b40")
 	)
 	(junction
-		(at 182.88 53.34)
+		(at 109.22 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b7e1336e-f34b-4e39-ba82-1ce2f9b407bb")
+		(uuid "71a15591-5345-43ab-9072-4271ed522e08")
 	)
 	(junction
-		(at 92.71 43.18)
+		(at 166.37 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7470e152-061a-4602-888e-a23b2546fcd3")
+	)
+	(junction
+		(at 171.45 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8eff6293-d24d-4a72-a679-212f01eb00f3")
+	)
+	(junction
+		(at 185.42 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b90a49a7-a3e0-4432-9720-958226b20f62")
+	)
+	(junction
+		(at 83.82 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bd8571e7-ee65-4749-a364-66211c37a4ab")
 	)
 	(junction
-		(at 163.83 106.68)
+		(at 83.82 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e97edd29-2de3-4927-a6d1-393a638fd392")
+		(uuid "d3ee97e4-a695-4b0f-92be-1de3bc9fc538")
 	)
-	(no_connect
-		(at 168.91 124.46)
-		(uuid "07b538de-c13d-419b-a8b0-576e2d39d7ed")
+	(junction
+		(at 179.07 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe3e965d-1206-4694-a5c6-f95f09f4c32f")
 	)
 	(no_connect
 		(at 68.58 135.89)
@@ -3270,6 +4525,10 @@
 		(uuid "1894ba88-fa06-487e-965c-22183728c36c")
 	)
 	(no_connect
+		(at 156.21 130.81)
+		(uuid "255cc82d-f92f-4e60-b41f-a3c58a127791")
+	)
+	(no_connect
 		(at 88.9 135.89)
 		(uuid "25adf318-c1bd-40a0-888d-8dac2f22a78c")
 	)
@@ -3278,16 +4537,8 @@
 		(uuid "7b1c978e-9869-40a2-95f1-ce74b774624f")
 	)
 	(no_connect
-		(at 168.91 127)
-		(uuid "7d080b85-dd9e-4305-b2c9-98dd70a5fb30")
-	)
-	(no_connect
 		(at 26.67 50.8)
 		(uuid "8d51f402-89dc-4d82-a58c-d7a6a324aaa6")
-	)
-	(no_connect
-		(at 26.67 58.42)
-		(uuid "92ab471a-f73b-4ba8-a5a3-40d8ab20340b")
 	)
 	(no_connect
 		(at 26.67 45.72)
@@ -3310,18 +4561,12 @@
 		(uuid "d6fa9432-d58d-452e-8b40-e95c78e7a99d")
 	)
 	(no_connect
+		(at 186.69 130.81)
+		(uuid "f7c1a9cc-ef95-4d41-ac91-3a532b49c0e7")
+	)
+	(no_connect
 		(at 26.67 77.47)
 		(uuid "ff8fdea0-af5e-4cf4-ab0e-b34c0e551499")
-	)
-	(wire
-		(pts
-			(xy 158.75 106.68) (xy 163.83 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "004777f5-b0c3-439b-abd7-4b686dfe0116")
 	)
 	(wire
 		(pts
@@ -3335,7 +4580,27 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 40.64) (xy 182.88 43.18)
+			(xy 168.91 113.03) (xy 168.91 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04d1dd98-8f08-4719-aebe-124e33f6c076")
+	)
+	(wire
+		(pts
+			(xy 179.07 110.49) (xy 181.61 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0519d559-5d7d-4fa8-8096-479493687587")
+	)
+	(wire
+		(pts
+			(xy 191.77 40.64) (xy 191.77 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3355,13 +4620,13 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 109.22) (xy 138.43 106.68)
+			(xy 140.97 110.49) (xy 156.21 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "068d4390-d8a8-4a37-bb78-112b0160eb4b")
+		(uuid "0685972d-d254-45e1-8986-8a1648232fb9")
 	)
 	(wire
 		(pts
@@ -3375,17 +4640,37 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 121.92) (xy 143.51 121.92)
+			(xy 171.45 151.13) (xy 171.45 148.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0937c528-0abe-49f4-a64b-fa84cef82709")
+		(uuid "07029c2f-403b-445d-8055-cb2039271fed")
 	)
 	(wire
 		(pts
-			(xy 228.6 60.96) (xy 228.6 57.15)
+			(xy 186.69 140.97) (xy 189.23 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b7b67ec-2a40-4c2e-8548-dfc7fa35f0d0")
+	)
+	(wire
+		(pts
+			(xy 189.23 138.43) (xy 208.28 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c287aec-1728-4b27-91d9-c635794dc708")
+	)
+	(wire
+		(pts
+			(xy 241.3 60.96) (xy 241.3 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3395,7 +4680,17 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 80.01) (xy 58.42 80.01)
+			(xy 189.23 138.43) (xy 186.69 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10f50da7-8419-46a8-80c2-dcfe86cd39c6")
+	)
+	(wire
+		(pts
+			(xy 26.67 80.01) (xy 45.72 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3405,27 +4700,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 106.68) (xy 166.37 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15e9b894-6d34-408a-8924-68457c16a8fe")
-	)
-	(wire
-		(pts
-			(xy 158.75 109.22) (xy 158.75 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16c5a273-e3e3-4d31-a4d7-e4e058b50471")
-	)
-	(wire
-		(pts
-			(xy 179.07 72.39) (xy 173.99 72.39)
+			(xy 179.07 72.39) (xy 177.8 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3435,27 +4710,17 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 127) (xy 133.35 127)
+			(xy 147.32 118.11) (xy 156.21 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1e5962bd-5700-4b56-8b6a-9e86ad212b38")
+		(uuid "1f5c4610-0f09-4283-82ab-7bf0c8e1f81b")
 	)
 	(wire
 		(pts
-			(xy 186.69 132.08) (xy 186.69 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f5bab48-6692-48ed-90aa-6b5058deaba2")
-	)
-	(wire
-		(pts
-			(xy 199.39 41.91) (xy 205.74 41.91)
+			(xy 212.09 41.91) (xy 218.44 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3475,13 +4740,13 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 43.18) (xy 120.65 43.18)
+			(xy 173.99 113.03) (xy 173.99 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "288d1332-4070-4d84-8699-8e8e24982792")
+		(uuid "287cec47-c8fe-421c-8ec7-338bde9fde7b")
 	)
 	(wire
 		(pts
@@ -3495,16 +4760,6 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 144.78) (xy 156.21 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b6653e1-cb02-437a-ae8d-8f5f047b15f1")
-	)
-	(wire
-		(pts
 			(xy 143.51 48.26) (xy 147.32 48.26)
 		)
 		(stroke
@@ -3515,7 +4770,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 40.64) (xy 91.44 43.18)
+			(xy 83.82 26.67) (xy 83.82 27.94)
 		)
 		(stroke
 			(width 0)
@@ -3545,6 +4800,56 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 111.76) (xy 193.04 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32d647e3-ad5d-4a79-ab2a-3bf063a840f6")
+	)
+	(wire
+		(pts
+			(xy 82.55 60.96) (xy 76.2 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "332541df-edab-455b-8309-764a7a56ee87")
+	)
+	(wire
+		(pts
+			(xy 177.8 74.93) (xy 177.8 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3868c51e-5da6-40a2-ae3f-9fe46f4935d3")
+	)
+	(wire
+		(pts
+			(xy 83.82 27.94) (xy 91.44 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38c18ea9-551e-4d02-b57b-a673b7c62d41")
+	)
+	(wire
+		(pts
+			(xy 166.37 106.68) (xy 166.37 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ae52b99-55ca-4ac3-bea0-8c32cf3c9e09")
+	)
+	(wire
+		(pts
 			(xy 33.02 60.96) (xy 26.67 60.96)
 		)
 		(stroke
@@ -3555,27 +4860,57 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 102.87) (xy 163.83 106.68)
+			(xy 151.13 138.43) (xy 156.21 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3bcf9888-d206-4132-88e6-e506862a6d70")
+		(uuid "3bf57038-4c74-4063-abf5-005719cf776d")
 	)
 	(wire
 		(pts
-			(xy 153.67 106.68) (xy 151.13 106.68)
+			(xy 191.77 53.34) (xy 185.42 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3ca6737d-43bf-4682-b1be-2eec6cd066bd")
+		(uuid "3c12d766-4843-4757-90bd-b0eb2a9fbaf7")
 	)
 	(wire
 		(pts
-			(xy 199.39 38.1) (xy 199.39 41.91)
+			(xy 173.99 110.49) (xy 179.07 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3caca2ea-135d-428b-b990-92f973b4e41d")
+	)
+	(wire
+		(pts
+			(xy 133.35 121.92) (xy 133.35 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4052d5e7-cba9-4054-a9b9-bb2e9d20df2b")
+	)
+	(wire
+		(pts
+			(xy 212.09 57.15) (xy 218.44 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43e8e5dd-f1ca-4a60-b121-966ccaf3e423")
+	)
+	(wire
+		(pts
+			(xy 212.09 38.1) (xy 212.09 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3585,17 +4920,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 57.15) (xy 215.9 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46381a08-6f7b-4fce-b1a2-7fbef623ab71")
-	)
-	(wire
-		(pts
-			(xy 118.11 43.18) (xy 113.03 43.18)
+			(xy 109.22 39.37) (xy 104.14 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3605,7 +4930,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 43.18) (xy 91.44 43.18)
+			(xy 76.2 39.37) (xy 83.82 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3625,6 +4950,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 135.89) (xy 156.21 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c4d0206-7f14-43be-bb38-61c84dec373c")
+	)
+	(wire
+		(pts
 			(xy 62.23 102.87) (xy 83.82 102.87)
 		)
 		(stroke
@@ -3635,33 +4970,33 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 132.08) (xy 133.35 132.08)
+			(xy 177.8 82.55) (xy 177.8 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "521e22fc-6e5b-4251-a8d9-5158eec2dd43")
+		(uuid "54fef464-6335-4eec-a166-2f7c9ce17b26")
 	)
 	(wire
 		(pts
-			(xy 120.65 40.64) (xy 120.65 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56fb601f-e1f9-44c9-8a1a-58b918e542ed")
-	)
-	(wire
-		(pts
-			(xy 92.71 50.8) (xy 92.71 53.34)
+			(xy 83.82 46.99) (xy 83.82 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "57edd269-a9ba-496d-8378-c1c21f8fa0ab")
+	)
+	(wire
+		(pts
+			(xy 201.93 143.51) (xy 200.66 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a225127-6e8e-4780-aebb-fbc1ba64623f")
 	)
 	(wire
 		(pts
@@ -3675,7 +5010,17 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 50.8) (xy 105.41 52.07)
+			(xy 171.45 148.59) (xy 173.99 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b6ae1de-83af-4732-9f5f-4484bc0fe294")
+	)
+	(wire
+		(pts
+			(xy 96.52 46.99) (xy 96.52 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3685,13 +5030,23 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 109.22) (xy 153.67 106.68)
+			(xy 193.04 110.49) (xy 189.23 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5e4ed7a5-5bec-4285-8aac-6504e2e9a914")
+		(uuid "5e2b8425-1376-4fe9-88c0-9a45b692fef0")
+	)
+	(wire
+		(pts
+			(xy 140.97 114.3) (xy 140.97 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5eb6630d-b329-4b0d-a72f-6fc4c8e8d83e")
 	)
 	(wire
 		(pts
@@ -3705,16 +5060,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 119.38) (xy 133.35 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64a6e938-1b43-4932-adcd-5773776bac1b")
-	)
-	(wire
-		(pts
 			(xy 121.92 72.39) (xy 121.92 74.93)
 		)
 		(stroke
@@ -3725,7 +5070,17 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 41.91) (xy 215.9 41.91)
+			(xy 36.83 58.42) (xy 26.67 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66fe00f3-3c70-4b7a-a27a-efc8ab89c4a0")
+	)
+	(wire
+		(pts
+			(xy 226.06 41.91) (xy 228.6 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3745,6 +5100,26 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 26.67) (xy 109.22 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f52ecc4-b323-4a35-b1f9-06664b3966c6")
+	)
+	(wire
+		(pts
+			(xy 82.55 66.04) (xy 76.2 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "741dc90b-3e06-424a-9452-7f781361785f")
+	)
+	(wire
+		(pts
 			(xy 93.98 133.35) (xy 88.9 133.35)
 		)
 		(stroke
@@ -3755,37 +5130,67 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 110.49) (xy 177.8 106.68)
+			(xy 168.91 110.49) (xy 166.37 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "87db6f6c-4fc6-4c85-9750-fb4e216b2269")
+		(uuid "7b065d41-c30d-43a4-a6fb-61e4a473ec82")
 	)
 	(wire
 		(pts
-			(xy 120.65 43.18) (xy 118.11 43.18)
+			(xy 177.8 72.39) (xy 173.99 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "88b4fc88-502c-4740-ad72-d08e837fd8a8")
+		(uuid "7db0ef40-7fb4-4454-aaa5-d13550ce372d")
 	)
 	(wire
 		(pts
-			(xy 151.13 102.87) (xy 151.13 106.68)
+			(xy 144.78 140.97) (xy 156.21 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "88ecab28-78ac-40e8-92aa-a9483cf852a1")
+		(uuid "7f450624-b5bd-48d5-9297-aa70e008baf8")
 	)
 	(wire
 		(pts
-			(xy 228.6 41.91) (xy 223.52 41.91)
+			(xy 201.93 143.51) (xy 201.93 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80177e0d-e1bb-4fb1-abed-a83ee6a7ecca")
+	)
+	(wire
+		(pts
+			(xy 166.37 110.49) (xy 163.83 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a69e1ed-072c-4663-bca5-4b7718c46e09")
+	)
+	(wire
+		(pts
+			(xy 148.59 123.19) (xy 156.21 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b5901e9-3006-4ff4-a65b-9ee0e50679fa")
+	)
+	(wire
+		(pts
+			(xy 241.3 41.91) (xy 236.22 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3795,7 +5200,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 57.15) (xy 223.52 57.15)
+			(xy 241.3 57.15) (xy 236.22 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3805,17 +5210,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 114.3) (xy 129.54 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f6c8d50-0722-4258-91aa-e181b108fd8e")
-	)
-	(wire
-		(pts
-			(xy 179.07 85.09) (xy 173.99 85.09)
+			(xy 179.07 85.09) (xy 177.8 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3825,43 +5220,73 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 43.18) (xy 92.71 43.18)
+			(xy 99.06 27.94) (xy 109.22 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "98ccb6f3-231f-4033-995c-3bc20db6265d")
+		(uuid "9bd52555-2504-49f5-850d-3e90d87222be")
 	)
 	(wire
 		(pts
-			(xy 151.13 106.68) (xy 148.59 106.68)
+			(xy 171.45 148.59) (xy 168.91 148.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9b7fbc3d-b900-4ebd-976e-a052b8bf9038")
+		(uuid "9be9125f-0c95-4433-9531-91e20fa62a89")
 	)
 	(wire
 		(pts
-			(xy 133.35 132.08) (xy 133.35 140.97)
+			(xy 26.67 87.63) (xy 38.1 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9ba2eb58-3e9a-4e85-ad63-912c46a0855c")
+		(uuid "9e32435b-6740-4306-9dbe-d084f806bd4c")
 	)
 	(wire
 		(pts
-			(xy 135.89 134.62) (xy 143.51 134.62)
+			(xy 189.23 138.43) (xy 189.23 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9d400009-5018-4e11-9398-e698545cc9d8")
+		(uuid "9f1ae808-4ae3-4dcc-92f4-d7bc055fdea4")
+	)
+	(wire
+		(pts
+			(xy 133.35 128.27) (xy 156.21 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a36e345b-7ba7-4c26-8e03-07015d2028ea")
+	)
+	(wire
+		(pts
+			(xy 152.4 143.51) (xy 156.21 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a43c6c2e-fccf-41d0-89e9-4760db1c462b")
+	)
+	(wire
+		(pts
+			(xy 177.8 85.09) (xy 173.99 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4523a19-dc82-411c-aa42-8c92d8ab7f12")
 	)
 	(wire
 		(pts
@@ -3885,7 +5310,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 43.18) (xy 97.79 43.18)
+			(xy 83.82 39.37) (xy 88.9 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3895,23 +5320,23 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 124.46) (xy 143.51 124.46)
+			(xy 185.42 50.8) (xy 185.42 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ac925742-7838-4fa1-8b53-7bb62afd9d5c")
+		(uuid "aee05c2d-9ff4-4c88-b56b-05bc406fa1ab")
 	)
 	(wire
 		(pts
-			(xy 177.8 106.68) (xy 173.99 106.68)
+			(xy 193.04 143.51) (xy 186.69 143.51)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b03ca175-1a17-4293-a11e-a7703237322c")
+		(uuid "afdf4a31-041f-4cec-bc69-a2a522377cec")
 	)
 	(wire
 		(pts
@@ -3925,7 +5350,17 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 55.88) (xy 209.55 57.15)
+			(xy 152.4 148.59) (xy 152.4 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1ab1b02-e583-404c-952d-cc3ec90e06c6")
+	)
+	(wire
+		(pts
+			(xy 212.09 53.34) (xy 212.09 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3935,13 +5370,13 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 132.08) (xy 185.42 132.08)
+			(xy 60.96 60.96) (xy 49.53 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b75924e6-61ec-4ce8-9e69-68c0fc354069")
+		(uuid "b54e6a54-a6df-42eb-ad9d-61fac5aa1acb")
 	)
 	(wire
 		(pts
@@ -3952,6 +5387,16 @@
 			(type default)
 		)
 		(uuid "ba5d4985-bbfd-4899-811e-1df14be03b3c")
+	)
+	(wire
+		(pts
+			(xy 60.96 71.12) (xy 49.53 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba9c0bca-5e32-49da-a67f-228710d27b99")
 	)
 	(wire
 		(pts
@@ -3975,6 +5420,26 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 39.37) (xy 116.84 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf830df5-d86b-494b-9c44-9aa3571a9b05")
+	)
+	(wire
+		(pts
+			(xy 208.28 142.24) (xy 208.28 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1c44467-066c-4660-ad93-a0005a3c5528")
+	)
+	(wire
+		(pts
 			(xy 58.42 144.78) (xy 59.69 144.78)
 		)
 		(stroke
@@ -3985,23 +5450,13 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 85.09) (xy 26.67 85.09)
+			(xy 191.77 40.64) (xy 185.42 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c56ae841-6da0-49f6-abfb-828316954b9f")
-	)
-	(wire
-		(pts
-			(xy 133.35 127) (xy 133.35 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7f5bd75-52be-4b28-80a1-f2ca04851a87")
+		(uuid "c2c1dfc2-0299-4498-80d8-7e8fa1d0a22e")
 	)
 	(wire
 		(pts
@@ -4015,13 +5470,13 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 132.08) (xy 177.8 132.08)
+			(xy 86.36 71.12) (xy 76.2 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cd223809-f0e8-4ba6-be3d-5c09582c11cc")
+		(uuid "cbffa8e8-9236-4ec1-b38d-819c9fa705f4")
 	)
 	(wire
 		(pts
@@ -4035,6 +5490,26 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 66.04) (xy 60.96 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cde684f2-15f6-453b-99d1-ee03d73ab60d")
+	)
+	(wire
+		(pts
+			(xy 144.78 148.59) (xy 144.78 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1199b2b-e7db-4c03-8b43-95c756132fea")
+	)
+	(wire
+		(pts
 			(xy 33.02 62.23) (xy 33.02 60.96)
 		)
 		(stroke
@@ -4042,16 +5517,6 @@
 			(type default)
 		)
 		(uuid "d2aca80f-1278-4308-9efb-1f7b61f7c1c3")
-	)
-	(wire
-		(pts
-			(xy 133.35 119.38) (xy 143.51 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5f8763a-1907-454f-9ff9-013bd451a57a")
 	)
 	(wire
 		(pts
@@ -4065,7 +5530,17 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 45.72) (xy 228.6 41.91)
+			(xy 179.07 106.68) (xy 179.07 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc704fc5-9d82-4065-aa7e-50ebe3eb3070")
+	)
+	(wire
+		(pts
+			(xy 241.3 45.72) (xy 241.3 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4085,17 +5560,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 106.68) (xy 140.97 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dee96470-c125-488a-aa35-84c08baa43c9")
-	)
-	(wire
-		(pts
-			(xy 118.11 50.8) (xy 118.11 53.34)
+			(xy 109.22 46.99) (xy 109.22 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4105,13 +5570,43 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 80.01) (xy 58.42 92.71)
+			(xy 26.67 85.09) (xy 38.1 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e04f3d93-8011-4414-818a-f7d67968960c")
+	)
+	(wire
+		(pts
+			(xy 185.42 40.64) (xy 182.88 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e09c1a84-bb32-4a38-8219-45ba5000a35f")
+	)
+	(wire
+		(pts
+			(xy 45.72 80.01) (xy 45.72 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e127ea80-7871-4f04-8d3b-a84df9fadda3")
+	)
+	(wire
+		(pts
+			(xy 83.82 27.94) (xy 83.82 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2c2df84-0119-4566-a344-44fa51184e8c")
 	)
 	(wire
 		(pts
@@ -4125,7 +5620,37 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 50.8) (xy 182.88 53.34)
+			(xy 185.42 53.34) (xy 182.88 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e560ffe0-58af-499f-b614-f40cb24c80c6")
+	)
+	(wire
+		(pts
+			(xy 226.06 57.15) (xy 228.6 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e74564c3-4156-47a3-a06c-6c388d299e22")
+	)
+	(wire
+		(pts
+			(xy 109.22 27.94) (xy 109.22 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea2c732b-fd25-417b-9809-a395a0e1128e")
+	)
+	(wire
+		(pts
+			(xy 191.77 50.8) (xy 191.77 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4175,6 +5700,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 118.11) (xy 204.47 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3ae312e-a3b4-45d0-ac43-63660338b8c3")
+	)
+	(wire
+		(pts
 			(xy 33.02 97.79) (xy 26.67 97.79)
 		)
 		(stroke
@@ -4185,13 +5720,13 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 87.63) (xy 41.91 87.63)
+			(xy 185.42 43.18) (xy 185.42 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fba9c307-408a-4918-8914-cd65e17da86f")
+		(uuid "f4a77647-2428-4061-bd85-7c1bbb239466")
 	)
 	(wire
 		(pts
@@ -4222,16 +5757,6 @@
 			(type default)
 		)
 		(uuid "ffdf0830-bbe2-41d1-ae77-4afaf1ead5a3")
-	)
-	(label "SDA"
-		(at 138.43 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "11c31352-7d5c-4040-9b5d-9522f6a7eeae")
 	)
 	(label "SCL"
 		(at 143.51 77.47 0)
@@ -4274,16 +5799,6 @@
 		(uuid "3deda5e4-6fb4-4a42-b506-e5e7909ae208")
 	)
 	(label "INT_1"
-		(at 135.89 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3fec879a-c2af-4fd3-aadf-f9c3b7a1d0f6")
-	)
-	(label "INT_1"
 		(at 38.1 87.63 180)
 		(effects
 			(font
@@ -4304,6 +5819,46 @@
 		(uuid "4ae8c6f1-85e5-4bfc-a193-537ac0545d8b")
 	)
 	(label "SDA"
+		(at 82.55 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5a75c513-20f5-48b3-849e-7c4268231fc9")
+	)
+	(label "SCL"
+		(at 82.55 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6afd52b1-efe1-4681-8ba3-1b101a858649")
+	)
+	(label "INT_1"
+		(at 49.53 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "70194e1c-457a-403f-a29b-52d4a70b74a0")
+	)
+	(label "INT_1"
+		(at 148.59 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7433cc2a-3935-4276-aa36-c94e27658929")
+	)
+	(label "SDA"
 		(at 143.51 48.26 0)
 		(effects
 			(font
@@ -4312,6 +5867,16 @@
 			(justify left bottom)
 		)
 		(uuid "811dc500-f17f-4b53-bdea-15af3d4cc005")
+	)
+	(label "nRESET"
+		(at 204.47 118.11 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "85c467a8-56f8-4556-971e-56011c46c5c1")
 	)
 	(label "SCL"
 		(at 143.51 45.72 0)
@@ -4324,6 +5889,16 @@
 		(uuid "8934a641-c4f8-4cde-942f-6f6f79ea9c49")
 	)
 	(label "SDA"
+		(at 151.13 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8b9880c5-a86f-4180-86c3-137fd47af8de")
+	)
+	(label "SDA"
 		(at 143.51 80.01 0)
 		(effects
 			(font
@@ -4332,6 +5907,16 @@
 			(justify left bottom)
 		)
 		(uuid "8c58c692-3f15-45a8-8dc1-1576e9858127")
+	)
+	(label "nRESET"
+		(at 86.36 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9e22dd5a-8372-48a6-884e-838e3e736171")
 	)
 	(label "TMP_RST"
 		(at 38.1 85.09 180)
@@ -4343,15 +5928,25 @@
 		)
 		(uuid "ada76f55-421a-42bf-b9d4-e3655ac10a7b")
 	)
-	(label "SCL"
-		(at 138.43 124.46 0)
+	(label "nRESET"
+		(at 36.83 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b868503f-e911-4cb3-a757-3ba6d3c59973")
+	)
+	(label "nRESET"
+		(at 147.32 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "c08bd153-f347-47a2-96fc-e2d4cf46a0ec")
+		(uuid "bcf85826-d50e-4f9d-89d4-e12f62a92d12")
 	)
 	(label "SDA"
 		(at 33.02 90.17 180)
@@ -4362,6 +5957,16 @@
 			(justify right bottom)
 		)
 		(uuid "cf418ad1-d548-44c1-af86-ab386c90f779")
+	)
+	(label "TMP_RST"
+		(at 49.53 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d42b4f4a-7d79-4604-b39b-0618c446502a")
 	)
 	(label "SDA"
 		(at 62.23 102.87 0)
@@ -4383,9 +5988,19 @@
 		)
 		(uuid "df988091-16b8-49c5-b4ab-dcbbf39be377")
 	)
+	(label "SCL"
+		(at 151.13 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5703e8f-4fa3-44ad-b043-3792a7e58f80")
+	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 209.55 55.88 0)
+		(at 212.09 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4395,7 +6010,7 @@
 		(dnp no)
 		(uuid "00b9d263-f276-4b07-92ae-1ffe7e0dfb00")
 		(property "Reference" "#PWR015"
-			(at 209.55 59.69 0)
+			(at 212.09 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4406,7 +6021,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 209.55 52.07 0)
+			(at 212.09 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4416,7 +6031,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 55.88 0)
+			(at 212.09 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4427,7 +6042,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 55.88 0)
+			(at 212.09 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4438,7 +6053,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 209.55 55.88 0)
+			(at 212.09 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4461,86 +6076,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 41.91 85.09 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "03cd01b1-c067-4e74-9001-e98bb9f6ab84")
-		(property "Reference" "TP6"
-			(at 43.434 82.042 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TMP_SENS_RST"
-			(at 43.18 84.582 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 46.99 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 46.99 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 41.91 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "17031018-05f9-46ae-9cda-cbff3b6b11b8")
-		)
-		(instances
-			(project "flipper-thermal-camera"
-				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "TP6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 182.88 46.99 0)
+		(at 191.77 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4550,7 +6087,7 @@
 		(dnp no)
 		(uuid "08119318-b8a6-4599-8e90-53de8f191be8")
 		(property "Reference" "C4"
-			(at 188.722 46.99 90)
+			(at 197.612 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4560,7 +6097,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 186.436 46.99 90)
+			(at 195.326 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4570,7 +6107,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 183.8452 50.8 0)
+			(at 192.7352 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4581,7 +6118,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 46.99 0)
+			(at 191.77 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4592,7 +6129,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 182.88 46.99 0)
+			(at 191.77 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4696,7 +6233,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 85.09 43.18 90)
+		(at 76.2 39.37 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4707,7 +6244,7 @@
 		(fields_autoplaced yes)
 		(uuid "0d9e8653-900d-4cb9-8888-e230dc219d75")
 		(property "Reference" "TP2"
-			(at 81.788 38.1 90)
+			(at 72.898 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4717,7 +6254,7 @@
 			)
 		)
 		(property "Value" "5V"
-			(at 81.788 40.64 90)
+			(at 72.898 36.83 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4727,7 +6264,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 85.09 38.1 0)
+			(at 76.2 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4738,7 +6275,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 38.1 0)
+			(at 76.2 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4749,7 +6286,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 85.09 43.18 0)
+			(at 76.2 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4772,8 +6309,240 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 133.35 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0eda5fb4-5a46-45c2-ae38-8a8c7974645d")
+		(property "Reference" "#PWR038"
+			(at 133.35 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 133.35 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 133.35 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eb86eb1f-565d-4d61-875d-6f939809d339")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 208.28 142.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "179f4d9f-bf4a-4841-8353-a8fc8578bc4c")
+		(property "Reference" "#PWR034"
+			(at 208.28 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 208.28 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 208.28 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2ca9613b-b042-4e08-8a9d-f416316477f3")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 204.47 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1a8a25e8-a81b-44bb-9831-bc850364fc52")
+		(property "Reference" "#PWR036"
+			(at 204.47 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 204.47 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 204.47 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e5884262-95e9-452b-ae46-8ac10e828e1b")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Regulator_Linear:XC6206PxxxMR")
-		(at 105.41 43.18 0)
+		(at 96.52 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4784,7 +6553,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ad17f58-e7cc-44e0-8366-b36b050fb2ab")
 		(property "Reference" "U2"
-			(at 105.41 36.83 0)
+			(at 96.52 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4794,7 +6563,7 @@
 			)
 		)
 		(property "Value" "XC6206PxxxMR"
-			(at 105.41 39.37 0)
+			(at 96.52 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4804,7 +6573,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 105.41 37.465 0)
+			(at 96.52 33.655 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4816,7 +6585,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
-			(at 105.41 43.18 0)
+			(at 96.52 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4827,7 +6596,7 @@
 			)
 		)
 		(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
-			(at 105.41 43.18 0)
+			(at 96.52 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4850,83 +6619,6 @@
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 151.13 102.87 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "210d3472-b0e8-480b-a733-466dc063f620")
-		(property "Reference" "#PWR024"
-			(at 151.13 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 151.13 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 151.13 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 151.13 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 151.13 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e4cd2965-5bea-4fdd-8dc6-8b780c516e88")
-		)
-		(instances
-			(project "flipper-thermal-camera"
-				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -5010,8 +6702,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 144.78 106.68 90)
+		(lib_id "Sensor_Motion:BNO055")
+		(at 171.45 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5019,9 +6711,44 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "22909339-2d20-42be-a04b-64051eec26ae")
-		(property "Reference" "C2"
-			(at 144.78 100.838 90)
+		(uuid "2a580e6c-d116-493c-953e-77ba958607bb")
+		(property "Reference" "U3"
+			(at 191.516 124.714 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BNO055"
+			(at 191.516 127.254 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm"
+			(at 177.8 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bno055-ds000.pdf"
+			(at 171.45 125.73 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5030,8 +6757,9 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
-			(at 144.78 103.124 90)
+		(property "Description" "Intelligent 9-axis absolute orientation sensor, LGA-28"
+			(at 171.45 130.81 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5040,8 +6768,134 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 148.59 105.7148 0)
+		(pin "26"
+			(uuid "287c039f-3be0-4f70-aa6b-363f9283ee5b")
+		)
+		(pin "24"
+			(uuid "a61a5cdb-7fe5-496b-927a-4961e7b127f4")
+		)
+		(pin "13"
+			(uuid "ddccc8d8-48cc-45eb-b1c0-6fc5f09854fb")
+		)
+		(pin "6"
+			(uuid "0491972e-ab04-48fe-88f0-e9fa3c58c356")
+		)
+		(pin "8"
+			(uuid "2ed50310-ea7b-440d-8b03-8091927f5234")
+		)
+		(pin "11"
+			(uuid "763fa21a-0da9-4300-a2d8-5584bcb58b43")
+		)
+		(pin "16"
+			(uuid "f292274d-c8c2-4c7a-b484-c9d754c7f91f")
+		)
+		(pin "19"
+			(uuid "3906dba4-d2a5-451e-a603-0f192d26fdc6")
+		)
+		(pin "12"
+			(uuid "ce7972f1-1d08-4c68-8333-cfddf8052fe5")
+		)
+		(pin "3"
+			(uuid "6f98ca9c-e28a-40a5-b281-75092d23232d")
+		)
+		(pin "9"
+			(uuid "1ea191b6-9e79-4138-bbed-e446bbb4edd0")
+		)
+		(pin "1"
+			(uuid "905fce44-f0a4-4434-9e24-b53aab87a5fa")
+		)
+		(pin "10"
+			(uuid "44d242c5-7c4b-4dc4-92e4-7918e91206d0")
+		)
+		(pin "14"
+			(uuid "a02664d7-4f9d-48a7-9ede-ba525a4f1fe7")
+		)
+		(pin "4"
+			(uuid "64b38b91-65f2-4bc3-b12a-dd13f5828dd0")
+		)
+		(pin "15"
+			(uuid "ea0f2aee-88b3-4332-8227-12ed7b248fdb")
+		)
+		(pin "2"
+			(uuid "bed1ab32-503a-4c84-a7c5-ad3f4d379c50")
+		)
+		(pin "5"
+			(uuid "e97902d3-f3dc-4009-b28e-58fa22b27f9f")
+		)
+		(pin "7"
+			(uuid "8860c126-fffa-42ec-bcd6-0d7af7ed29e9")
+		)
+		(pin "17"
+			(uuid "3b03654d-0651-420e-be9d-1ae01e90eb16")
+		)
+		(pin "18"
+			(uuid "18647e31-63e3-4eb6-aa35-3553fb7942e6")
+		)
+		(pin "20"
+			(uuid "233582c2-fba1-4e8a-8d08-474c817dfbce")
+		)
+		(pin "21"
+			(uuid "e373a604-b538-47af-8efa-ec93760280ae")
+		)
+		(pin "22"
+			(uuid "b174fc57-7d84-4c74-852c-b46536e95ca1")
+		)
+		(pin "23"
+			(uuid "0cb57340-54c8-4173-b7ff-1d0cc7377d7a")
+		)
+		(pin "25"
+			(uuid "036536b9-d551-4165-a98a-4ee5298e6bb2")
+		)
+		(pin "28"
+			(uuid "5abfa3c1-d6fb-49ce-bd93-e05c893b88c6")
+		)
+		(pin "27"
+			(uuid "cb60addc-5bca-4ef7-94a6-5724e4cf0c8f")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 201.93 149.86 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d35375d-350c-405b-9a0e-3e9a1532a9b8")
+		(property "Reference" "#PWR021"
+			(at 201.93 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 201.93 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5052,7 +6906,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 106.68 0)
+			(at 201.93 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5062,8 +6916,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 144.78 106.68 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 201.93 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5074,15 +6928,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6a262292-30c6-4fbd-b65d-4bc7f3eb0944")
-		)
-		(pin "2"
-			(uuid "833f058a-8ece-40af-b478-d87d86523106")
+			(uuid "8f8ab714-1d10-487c-85ef-3cfead024a44")
 		)
 		(instances
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "C2")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5165,6 +7016,244 @@
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SP1001-05JTG:SP1001-05JTG")
+		(at 68.58 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31bf21e3-f931-453d-a5c5-5059cc90644c")
+		(property "Reference" "U6"
+			(at 68.58 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SP1001-05JTG"
+			(at 68.58 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Components:SOP65P220X110-6N"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "13V Clamp 2A (8/20µs) Ipp Tvs Diode Surface Mount SC-70-6"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "Littelfuse Inc."
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "1.1mm"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "SC-70-6 Littelfuse"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/SP1001-05JTG/Littelfuse/view-part/?ref=eda"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "IPC-7351B"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "GD"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SP1001-05JTG/Littelfuse/view-part/?ref=snap"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "SP1001-05JTG"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=491437&manufacturer=Littelfuse Inc.&part_name=SP1001-05JTG&search_term=sp1001-05"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Littelfuse"
+			(at 68.58 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "1"
+			(uuid "08895de1-0d63-4f42-b098-c0a65b2a656b")
+		)
+		(pin "6"
+			(uuid "e8a3417e-178a-482f-bf44-7c3fbd66a654")
+		)
+		(pin "4"
+			(uuid "d9e058de-aaa5-4519-8d07-6ef337285410")
+		)
+		(pin "3"
+			(uuid "012d9715-c3a9-4e27-a7f2-f079971a7a66")
+		)
+		(pin "5"
+			(uuid "8d310e3b-1262-4b4a-ba29-bd889b9f9577")
+		)
+		(pin "2"
+			(uuid "84ddcd3a-4369-48a7-aa48-e5561d65f9d6")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -5403,7 +7492,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 219.71 41.91 180)
+		(at 232.41 41.91 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5413,7 +7502,7 @@
 		(dnp no)
 		(uuid "37119bc6-ffec-4b66-be36-4a178beb4317")
 		(property "Reference" "D1"
-			(at 219.456 36.322 0)
+			(at 232.156 36.322 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5423,7 +7512,7 @@
 			)
 		)
 		(property "Value" "LED_R"
-			(at 219.456 38.862 0)
+			(at 232.156 38.862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5433,7 +7522,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 219.71 41.91 0)
+			(at 232.41 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5444,7 +7533,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 219.71 41.91 0)
+			(at 232.41 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5455,7 +7544,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 219.71 41.91 0)
+			(at 232.41 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5466,7 +7555,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 219.71 41.91 0)
+			(at 232.41 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5486,6 +7575,85 @@
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 177.8 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3c015be1-0801-4cfd-bdbf-0cd39aabbaed")
+		(property "Reference" "C8"
+			(at 183.642 78.74 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 181.356 78.74 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 178.7652 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 177.8 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b236b5fc-25d5-4df1-b1c0-f1ee1c47426c")
+		)
+		(pin "2"
+			(uuid "cd5e69d9-8f8d-40f3-b583-6e8746ac3f7a")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -5596,85 +7764,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 129.54 114.3 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "430c6909-de9e-4331-aed1-5ded5b8091c4")
-		(property "Reference" "#PWR020"
-			(at 129.54 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 129.54 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 129.54 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 129.54 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1a6a082e-4195-464f-95bc-8b18ae12420b")
-		)
-		(instances
-			(project "flipper-thermal-camera"
-				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 92.71 53.34 0)
+		(at 83.82 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5685,7 +7776,7 @@
 		(fields_autoplaced yes)
 		(uuid "44019580-94f3-47ed-9256-9d9dd8eafa7f")
 		(property "Reference" "#PWR030"
-			(at 92.71 59.69 0)
+			(at 83.82 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5696,7 +7787,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.71 58.42 0)
+			(at 83.82 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5706,7 +7797,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 53.34 0)
+			(at 83.82 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5717,7 +7808,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 53.34 0)
+			(at 83.82 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5728,7 +7819,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 92.71 53.34 0)
+			(at 83.82 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6143,85 +8234,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 170.18 106.68 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "60b43a29-3741-465d-ba66-b4258431bcd6")
-		(property "Reference" "C1"
-			(at 170.18 100.838 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 170.18 103.124 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 173.99 105.7148 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 170.18 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d9d11952-5d66-49a5-9737-992677e01bf2")
-		)
-		(pin "2"
-			(uuid "35f424ad-5b45-46de-8f88-2975431896c4")
-		)
-		(instances
-			(project "flipper-thermal-camera"
-				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 48.26 142.24 0)
 		(unit 1)
@@ -6299,8 +8311,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 133.35 140.97 0)
+		(lib_id "Device:R")
+		(at 204.47 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6308,11 +8320,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6a169b77-1329-41c5-965d-d6231ddc8b6d")
-		(property "Reference" "#PWR022"
-			(at 133.35 147.32 0)
-			(hide yes)
+		(uuid "64d42880-84c0-4f29-abee-40ba20dc5d4f")
+		(property "Reference" "R5"
+			(at 207.264 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6321,8 +8331,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 133.35 146.05 0)
+		(property "Value" "10k"
+			(at 209.804 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6331,8 +8341,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 133.35 140.97 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 202.692 106.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6343,7 +8353,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 140.97 0)
+			(at 204.47 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6353,8 +8363,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 133.35 140.97 0)
+		(property "Description" "Resistor"
+			(at 204.47 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6365,20 +8375,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "eacacaed-e75f-41ca-aafe-8f3865f0b554")
+			(uuid "805f0281-44dc-4e41-8a00-5094dd520ba2")
+		)
+		(pin "2"
+			(uuid "64fbc168-1152-46d4-bb26-d77832b14d76")
 		)
 		(instances
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "#PWR022")
+					(reference "R5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 120.65 40.64 0)
+		(lib_id "Device:R")
+		(at 222.25 57.15 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6386,10 +8399,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "6b71d58d-9ae7-46ce-b467-53912d26aba6")
-		(property "Reference" "#PWR07"
-			(at 120.65 44.45 0)
-			(hide yes)
+		(uuid "68163c4f-62f3-4785-bb0f-f207d503dc0d")
+		(property "Reference" "R6"
+			(at 222.25 54.356 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6398,8 +8410,8 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 120.65 36.83 0)
+		(property "Value" "330"
+			(at 222.25 51.816 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6408,8 +8420,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 120.65 40.64 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 222.25 58.928 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6420,7 +8432,165 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 40.64 0)
+			(at 222.25 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 222.25 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ebc96067-f458-4f40-82e6-d7ad5722206d")
+		)
+		(pin "2"
+			(uuid "4e2337b3-e6d3-45ab-8033-77a5346689b0")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 171.45 151.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68d50a1e-1254-4661-bcdf-85349b0ebdda")
+		(property "Reference" "#PWR033"
+			(at 171.45 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 171.45 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 171.45 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "85e94242-3f72-4bbe-9a4c-e09bd21d0a2d")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 109.22 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6b71d58d-9ae7-46ce-b467-53912d26aba6")
+		(property "Reference" "#PWR07"
+			(at 109.22 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 109.22 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6431,7 +8601,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 120.65 40.64 0)
+			(at 109.22 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6455,7 +8625,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 219.71 57.15 180)
+		(at 232.41 57.15 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6465,7 +8635,7 @@
 		(dnp no)
 		(uuid "6bb060b3-2a54-433c-8190-3b13dd322e03")
 		(property "Reference" "D2"
-			(at 219.456 51.562 0)
+			(at 232.156 51.562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6475,7 +8645,7 @@
 			)
 		)
 		(property "Value" "LED_G"
-			(at 219.456 54.102 0)
+			(at 232.156 54.102 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6485,7 +8655,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 219.71 57.15 0)
+			(at 232.41 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6496,7 +8666,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 219.71 57.15 0)
+			(at 232.41 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6507,7 +8677,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 219.71 57.15 0)
+			(at 232.41 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6518,7 +8688,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 219.71 57.15 0)
+			(at 232.41 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6538,6 +8708,161 @@
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 140.97 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6caec4ba-bb7c-40d3-9429-a94e81986c98")
+		(property "Reference" "#PWR025"
+			(at 140.97 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 140.97 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 140.97 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "abbc202a-84a9-47a9-8269-a96fe867f969")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 144.78 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d38ae83-5f40-41d7-80a2-0bca4fdbaea1")
+		(property "Reference" "#PWR037"
+			(at 144.78 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.78 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 144.78 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ca098aea-099e-4321-ad6b-ea7ed9445126")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -6615,6 +8940,397 @@
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 57.15 66.04 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "736be066-a67e-4d5d-b371-d051ff1b4b80")
+		(property "Reference" "#PWR018"
+			(at 50.8 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 55.626 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 57.15 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "761576ec-d176-42fa-a6ac-87e061cadd8e")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 185.42 46.99 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "73b737db-cb99-4e61-a71e-2483145b2a83")
+		(property "Reference" "C9"
+			(at 179.578 46.99 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 181.864 46.99 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 184.4548 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 185.42 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8471b5e6-beed-404e-a2ca-e5dc7687a247")
+		)
+		(pin "2"
+			(uuid "b45c3e62-e880-44fb-8197-2c728571646c")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 193.04 111.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "73eb5cf0-4d59-4f58-82bf-5e65871928ee")
+		(property "Reference" "#PWR023"
+			(at 193.04 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 193.04 115.316 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 193.04 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "81ab197a-ef6b-4228-a634-c9c2380f5e42")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 106.68 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "795cf877-b270-4bfe-ac37-755bcf7ac56f")
+		(property "Reference" "#PWR040"
+			(at 106.68 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.68 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 106.68 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "54792ac8-f288-4b48-a68a-91a709e3073f")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 185.42 110.49 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7b0ab677-0fb7-496e-887b-1c04c054934d")
+		(property "Reference" "C1"
+			(at 185.42 104.648 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "120nF"
+			(at 185.42 106.934 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 189.23 109.5248 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 185.42 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8f154a7d-a397-49bc-ba64-fc4e72af0139")
+		)
+		(pin "2"
+			(uuid "5881ed90-f3cb-4f89-b8b0-712c67c13e3f")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -6700,7 +9416,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 105.41 52.07 0)
+		(at 96.52 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6711,7 +9427,7 @@
 		(fields_autoplaced yes)
 		(uuid "7dd8d452-c298-4833-b0d8-85fd86d8542a")
 		(property "Reference" "#PWR06"
-			(at 105.41 58.42 0)
+			(at 96.52 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6722,7 +9438,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 105.41 57.15 0)
+			(at 96.52 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6732,7 +9448,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 52.07 0)
+			(at 96.52 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6743,7 +9459,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 52.07 0)
+			(at 96.52 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6754,7 +9470,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 105.41 52.07 0)
+			(at 96.52 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6854,8 +9570,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 177.8 110.49 0)
+		(lib_id "Device:C")
+		(at 106.68 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6863,11 +9579,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8757906c-f399-4925-b27c-814f518d70ca")
-		(property "Reference" "#PWR023"
-			(at 177.8 116.84 0)
-			(hide yes)
+		(uuid "80438008-0ee4-400a-983d-8538d82e2987")
+		(property "Reference" "C7"
+			(at 112.522 130.81 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6876,8 +9590,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 177.8 115.57 0)
+		(property "Value" "100nF"
+			(at 110.236 130.81 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6886,8 +9600,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 177.8 110.49 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 107.6452 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6898,7 +9612,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 110.49 0)
+			(at 106.68 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6908,87 +9622,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2abaa447-af99-486f-97a3-3e63888dfb51")
-		)
-		(instances
-			(project "flipper-thermal-camera"
-				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 41.91 87.63 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "89f43c49-0cb7-4e50-877d-81491a5f3735")
-		(property "Reference" "TP7"
-			(at 44.45 89.6619 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "INT_ICM"
-			(at 44.45 92.2019 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 36.83 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 36.83 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 41.91 87.63 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 106.68 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6999,160 +9634,94 @@
 			)
 		)
 		(pin "1"
-			(uuid "c356900d-0011-46c4-8010-707a8359bf94")
-		)
-		(instances
-			(project "flipper-thermal-camera"
-				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "TP7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Sensor_Motion:ICM-20948")
-		(at 156.21 127 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9dd76404-c7bb-4152-99b3-477844bcf732")
-		(property "Reference" "U3"
-			(at 158.3533 144.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ICM-20948"
-			(at 158.3533 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm"
-			(at 156.21 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.invensense.com/wp-content/uploads/2016/06/DS-000189-ICM-20948-v1.3.pdf"
-			(at 156.21 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "InvenSense 9-Axis Motion Sensor, Accelerometer, Gyroscope, Compass, I2C/SPI, QFN-24"
-			(at 156.21 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "6"
-			(uuid "d9f82a38-2028-4a95-a1ba-147e39629e19")
-		)
-		(pin "21"
-			(uuid "6c317078-8140-47d4-9b8d-d733634d9c43")
-		)
-		(pin "14"
-			(uuid "a188906e-e2b3-4453-af66-8c76191e44b1")
-		)
-		(pin "10"
-			(uuid "306dd6e9-0b4c-4bdb-b221-a9998cc03c0d")
-		)
-		(pin "5"
-			(uuid "56454873-68c2-4429-b297-2b219f2a7329")
-		)
-		(pin "7"
-			(uuid "63a5ec4f-75bc-4649-b7b3-1aafe309dd4e")
-		)
-		(pin "8"
-			(uuid "0eea2d09-bbd7-4214-9d53-ad5967269f84")
-		)
-		(pin "11"
-			(uuid "c33e5829-cbda-475a-8023-5a175c2d0093")
+			(uuid "5d990f11-3152-4291-a2e7-8442c04c3dfe")
 		)
 		(pin "2"
-			(uuid "a906aec7-ac55-40be-b320-43e07d66249c")
-		)
-		(pin "9"
-			(uuid "5c6ba997-1e90-4da7-9cdd-8824d3db0c2f")
-		)
-		(pin "12"
-			(uuid "6bfa22cb-f0a6-4496-acdd-5017332ec1f3")
-		)
-		(pin "15"
-			(uuid "eec52bbb-0ee0-4fc6-bddb-c7b1fb718f6d")
-		)
-		(pin "16"
-			(uuid "5196f6d4-a33c-4d21-aae7-d413be39d39f")
-		)
-		(pin "17"
-			(uuid "e4082d6c-8604-4420-acbe-ca24c45285a6")
-		)
-		(pin "13"
-			(uuid "5747f70f-3312-45c6-9366-43262ba3eff7")
-		)
-		(pin "18"
-			(uuid "708d94df-28be-4ce6-9b83-039da79341a6")
-		)
-		(pin "19"
-			(uuid "a0126a1e-88f5-492c-80c3-108ac0b950ba")
-		)
-		(pin "3"
-			(uuid "b03e471c-9b84-4829-baba-4b6e9c3ddb6f")
-		)
-		(pin "1"
-			(uuid "5249b938-1002-49a1-b20a-63c2bda4244a")
-		)
-		(pin "4"
-			(uuid "5419a203-2b8b-4a59-b1d8-d2dacb062321")
-		)
-		(pin "20"
-			(uuid "0367170c-7da1-4fdc-b65c-b40968b719eb")
-		)
-		(pin "22"
-			(uuid "45d3d4d8-3aa4-4b25-8e58-535558c7b775")
-		)
-		(pin "23"
-			(uuid "f646b749-cd84-4ae3-bda3-185b792f1f2f")
-		)
-		(pin "24"
-			(uuid "12f7f01a-4696-47cd-9f07-0eed0f4343ad")
+			(uuid "61ce2ffd-7847-47bc-aa93-071f86981565")
 		)
 		(instances
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "U3")
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 196.85 143.51 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9167b2a0-8fe8-4708-9e9e-1064af660224")
+		(property "Reference" "C3"
+			(at 196.85 149.352 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF"
+			(at 196.85 147.066 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 193.04 144.4752 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 196.85 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ed10c6ea-64bd-4845-9436-be5ea60c1ff4")
+		)
+		(pin "2"
+			(uuid "f990a72d-415f-4d07-8bd4-51ffacf1b5cd")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -7160,7 +9729,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 118.11 53.34 0)
+		(at 109.22 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7171,7 +9740,7 @@
 		(fields_autoplaced yes)
 		(uuid "a0a83007-b82b-4061-a902-4d7661db1572")
 		(property "Reference" "#PWR031"
-			(at 118.11 59.69 0)
+			(at 109.22 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7182,7 +9751,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 118.11 58.42 0)
+			(at 109.22 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7192,7 +9761,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 53.34 0)
+			(at 109.22 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7203,7 +9772,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 53.34 0)
+			(at 109.22 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7214,7 +9783,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 118.11 53.34 0)
+			(at 109.22 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7657,8 +10226,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 186.69 138.43 0)
+		(lib_id "Device:C")
+		(at 160.02 110.49 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7666,11 +10235,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b5342d14-2247-4b56-b2e0-e231ef2be5a1")
-		(property "Reference" "#PWR021"
-			(at 186.69 144.78 0)
-			(hide yes)
+		(uuid "ae552dcd-ddbc-4996-97e0-b7fd21c93f66")
+		(property "Reference" "C2"
+			(at 160.02 104.648 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7679,8 +10246,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 186.69 143.51 0)
+		(property "Value" "100nF"
+			(at 160.02 106.934 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7689,8 +10256,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 186.69 138.43 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 163.83 109.5248 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7701,7 +10268,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 138.43 0)
+			(at 160.02 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7711,8 +10278,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 186.69 138.43 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 160.02 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7723,12 +10290,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "9d6c1554-08ab-4e8a-b88e-fb3e2fa419d2")
+			(uuid "2cafc4be-e75a-40e1-8ed8-3fb4bd29977e")
+		)
+		(pin "2"
+			(uuid "fe4462bb-c843-4773-bf21-7dbbf136f920")
 		)
 		(instances
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "#PWR021")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -7814,7 +10384,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 199.39 38.1 0)
+		(at 212.09 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7824,7 +10394,7 @@
 		(dnp no)
 		(uuid "b7abfb7d-a448-4d6d-a128-84bd74088967")
 		(property "Reference" "#PWR012"
-			(at 199.39 41.91 0)
+			(at 212.09 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7835,7 +10405,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 199.39 34.29 0)
+			(at 212.09 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7845,7 +10415,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 199.39 38.1 0)
+			(at 212.09 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7856,7 +10426,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 38.1 0)
+			(at 212.09 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7867,7 +10437,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 199.39 38.1 0)
+			(at 212.09 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7891,7 +10461,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 125.73 43.18 270)
+		(at 116.84 39.37 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7902,7 +10472,7 @@
 		(fields_autoplaced yes)
 		(uuid "bbae4a01-abec-490c-9c85-0faaaf8776b7")
 		(property "Reference" "TP1"
-			(at 130.81 41.9099 90)
+			(at 121.92 38.0999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7913,7 +10483,7 @@
 			)
 		)
 		(property "Value" "3V3"
-			(at 130.81 44.4499 90)
+			(at 121.92 40.6399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7924,7 +10494,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 125.73 48.26 0)
+			(at 116.84 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7935,7 +10505,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 48.26 0)
+			(at 116.84 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7946,7 +10516,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 125.73 43.18 0)
+			(at 116.84 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7970,7 +10540,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 209.55 41.91 270)
+		(at 222.25 41.91 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7980,7 +10550,7 @@
 		(dnp no)
 		(uuid "c02dd98f-aadf-4ce2-9129-2a0b296d3b03")
 		(property "Reference" "R3"
-			(at 209.55 36.576 90)
+			(at 222.25 36.576 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7990,7 +10560,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 209.55 39.116 90)
+			(at 222.25 39.116 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8000,7 +10570,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 209.55 40.132 90)
+			(at 222.25 40.132 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8011,7 +10581,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 41.91 0)
+			(at 222.25 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8022,7 +10592,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 209.55 41.91 0)
+			(at 222.25 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8120,84 +10690,6 @@
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
 					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 156.21 149.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c2d2e896-202d-47f2-9696-a89fa9eb67cc")
-		(property "Reference" "#PWR018"
-			(at 156.21 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 156.21 154.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3fb414ff-2491-41e8-88be-1e708ac47ade")
-		)
-		(instances
-			(project "flipper-thermal-camera"
-				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -8601,7 +11093,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 228.6 60.96 0)
+		(at 241.3 60.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8612,7 +11104,7 @@
 		(fields_autoplaced yes)
 		(uuid "cc8255b1-74b8-4a78-8354-c3ec1bdb0e95")
 		(property "Reference" "#PWR014"
-			(at 228.6 67.31 0)
+			(at 241.3 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8623,7 +11115,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 228.6 66.04 0)
+			(at 241.3 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8633,7 +11125,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 60.96 0)
+			(at 241.3 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8644,7 +11136,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 60.96 0)
+			(at 241.3 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8655,7 +11147,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 228.6 60.96 0)
+			(at 241.3 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8678,8 +11170,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 92.71 46.99 180)
+		(lib_id "power:+3V3")
+		(at 179.07 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8687,9 +11179,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d969c905-d411-4654-a3f9-318bb0e8f284")
-		(property "Reference" "C5"
-			(at 86.868 46.99 90)
+		(uuid "d4b889bd-0531-42d9-be71-2644bc6281f2")
+		(property "Reference" "#PWR019"
+			(at 179.07 110.49 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8698,8 +11191,8 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
-			(at 89.154 46.99 90)
+		(property "Value" "+3V3"
+			(at 179.07 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8708,8 +11201,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 91.7448 43.18 0)
+		(property "Footprint" ""
+			(at 179.07 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8720,7 +11213,83 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 46.99 0)
+			(at 179.07 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 179.07 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8adf0bbe-f664-4a5b-a13a-5b873287e56f")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 83.82 43.18 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d969c905-d411-4654-a3f9-318bb0e8f284")
+		(property "Reference" "C5"
+			(at 77.978 43.18 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF"
+			(at 80.264 43.18 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 82.8548 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8731,7 +11300,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 92.71 46.99 0)
+			(at 83.82 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8751,6 +11320,83 @@
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 106.68 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "da8b20cb-68fe-4e20-8fc3-111d06e5354e")
+		(property "Reference" "#PWR039"
+			(at 106.68 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 106.68 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 106.68 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8c295732-3d7a-4c33-931c-a961a93c6f96")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -8778,7 +11424,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "SDA_TP"
 			(at 143.51 85.852 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8911,242 +11557,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 163.83 102.87 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e1fe5554-e67d-4697-bc25-f5ce254743d1")
-		(property "Reference" "#PWR019"
-			(at 163.83 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 163.83 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 163.83 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 163.83 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "88196b7c-0485-49ec-b35a-db564d706d92")
-		)
-		(instances
-			(project "flipper-thermal-camera"
-				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 138.43 109.22 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5712893-9996-47f2-935b-65a3eb0222c0")
-		(property "Reference" "#PWR025"
-			(at 138.43 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 138.43 114.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 138.43 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 138.43 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 138.43 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6bc1cd29-6ac9-4946-a966-e3d475d55e17")
-		)
-		(instances
-			(project "flipper-thermal-camera"
-				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 181.61 132.08 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e91a9523-e99d-4701-9469-e212162532b2")
-		(property "Reference" "C3"
-			(at 181.61 126.238 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 181.61 128.524 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 185.42 131.1148 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 181.61 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 181.61 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "49a3ea9b-479f-4834-b86b-2966b3dd138a")
-		)
-		(pin "2"
-			(uuid "8e0c62e3-776c-41f6-ac36-57d94bd82f87")
-		)
-		(instances
-			(project "flipper-thermal-camera"
-				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 118.11 46.99 0)
+		(at 109.22 43.18 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -9157,7 +11569,7 @@
 		(dnp no)
 		(uuid "ebf160e8-9573-4d1f-bb75-5f93d25f5669")
 		(property "Reference" "C6"
-			(at 123.952 46.99 90)
+			(at 115.062 43.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9167,7 +11579,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 121.666 46.99 90)
+			(at 112.776 43.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9177,7 +11589,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 119.0752 43.18 0)
+			(at 110.1852 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9188,7 +11600,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 46.99 0)
+			(at 109.22 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9199,7 +11611,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 118.11 46.99 0)
+			(at 109.22 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9225,8 +11637,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 58.42 92.71 0)
+		(lib_id "Device:D")
+		(at 95.25 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9235,10 +11647,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f135bbca-b095-4d16-b60e-78343966274b")
-		(property "Reference" "#PWR02"
-			(at 58.42 99.06 0)
-			(hide yes)
+		(uuid "ef008b62-e954-4072-9333-025c619d3075")
+		(property "Reference" "D3"
+			(at 95.25 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9247,8 +11658,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 58.42 97.79 0)
+		(property "Value" "RB521S-30"
+			(at 95.25 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9257,8 +11668,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 58.42 92.71 0)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 95.25 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9269,7 +11680,121 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 92.71 0)
+			(at 95.25 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 95.25 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 95.25 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 95.25 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C727120"
+			(at 95.25 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "595dee5e-0f82-4de5-922a-23de19e49841")
+		)
+		(pin "1"
+			(uuid "32e2d476-84b1-4c72-a0ba-ed56f0c50836")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f135bbca-b095-4d16-b60e-78343966274b")
+		(property "Reference" "#PWR02"
+			(at 45.72 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9280,7 +11805,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 92.71 0)
+			(at 45.72 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9303,8 +11828,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 91.44 40.64 0)
+		(lib_id "power:GND")
+		(at 152.4 148.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9312,9 +11837,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f7acdca6-100a-4284-b709-a961f293ab2d")
-		(property "Reference" "#PWR05"
-			(at 91.44 44.45 0)
+		(fields_autoplaced yes)
+		(uuid "f44b5d55-7b0c-4ed1-a467-996ce9cb158e")
+		(property "Reference" "#PWR035"
+			(at 152.4 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9324,8 +11850,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 91.44 36.83 0)
+		(property "Value" "GND"
+			(at 152.4 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9335,7 +11861,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 40.64 0)
+			(at 152.4 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9346,7 +11872,84 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 40.64 0)
+			(at 152.4 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 152.4 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b9aceaa-7fb1-4d45-bada-1171368d25b6")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 83.82 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f7acdca6-100a-4284-b709-a961f293ab2d")
+		(property "Reference" "#PWR05"
+			(at 83.82 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 83.82 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9357,7 +11960,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 91.44 40.64 0)
+			(at 83.82 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9380,8 +11983,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 228.6 45.72 0)
+		(lib_id "power:+3V3")
+		(at 166.37 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9389,9 +11992,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f9c5b1c9-ea19-4ce1-8748-d35c59b2ec42")
-		(property "Reference" "#PWR013"
-			(at 228.6 52.07 0)
+		(uuid "f8959d5e-9f30-42c9-be96-d82124a2f45b")
+		(property "Reference" "#PWR024"
+			(at 166.37 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9401,8 +12004,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 228.6 50.038 0)
+		(property "Value" "+3V3"
+			(at 166.37 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9412,7 +12015,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 45.72 0)
+			(at 166.37 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9423,7 +12026,84 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 45.72 0)
+			(at 166.37 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 166.37 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e740cb26-7381-4dfb-b06f-d555a6be865a")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 241.3 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f9c5b1c9-ea19-4ce1-8748-d35c59b2ec42")
+		(property "Reference" "#PWR013"
+			(at 241.3 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 241.3 50.038 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9434,7 +12114,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 228.6 45.72 0)
+			(at 241.3 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

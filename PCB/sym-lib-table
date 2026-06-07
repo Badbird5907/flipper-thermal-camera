@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "MLX90640ESF-BAB-000-SP") (type "KiCad") (uri "${KIPRJMOD}/Components/MLX90640ESF-BAB-000-SP.kicad_sym") (options "") (descr ""))
 	(lib (name "VEML7700-TT") (type "KiCad") (uri "${KIPRJMOD}/Components/VEML7700-TT.kicad_sym") (options "") (descr ""))
+	(lib (name "SP1001-05JTG") (type "KiCad") (uri "${KIPRJMOD}/Components/SP1001-05JTG.kicad_sym") (options "") (descr ""))
 )

@@ -59,3 +59,10 @@ polygon tool to fill in the border. Not the best solution, but it's the best I c
 
 ![KiCad](https://cdn.badbird.dev/screenshots/2026/05/zjmn41jP9w.png)
 ![Render](https://cdn.badbird.dev/screenshots/2026/05/WPVof91aNT.png)
+
+
+# 06/07
+
+Had to switch out the existing IMU for a BNO055 as it went out of stock. Using the BNO055 is a upgrade anyway, it can provide both raw and fused 9-axis sensor data over I2C as it has its own ARM processor.
+
+Also added more capacitors for filtering and a diode to prevent frying the LDO by accident with a short, and a diode array to protect the data pins from ESD.
