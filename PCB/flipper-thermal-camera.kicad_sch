@@ -4517,10 +4517,6 @@
 		(uuid "fe3e965d-1206-4694-a5c6-f95f09f4c32f")
 	)
 	(no_connect
-		(at 68.58 135.89)
-		(uuid "0f60ec52-02df-47ce-9524-9667848ff890")
-	)
-	(no_connect
 		(at 26.67 48.26)
 		(uuid "1894ba88-fa06-487e-965c-22183728c36c")
 	)
@@ -5060,6 +5056,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 140.97) (xy 66.04 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61d81c6c-b1d4-40e6-8312-db4f799d5b33")
+	)
+	(wire
+		(pts
 			(xy 121.92 72.39) (xy 121.92 74.93)
 		)
 		(stroke
@@ -5467,6 +5473,16 @@
 			(type default)
 		)
 		(uuid "ca951b96-f55e-40a0-a85e-db58a5600b54")
+	)
+	(wire
+		(pts
+			(xy 66.04 135.89) (xy 68.58 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb32295f-2598-465a-b7ab-c5df5594036d")
 	)
 	(wire
 		(pts
@@ -6070,6 +6086,84 @@
 			(project "flipper-thermal-camera"
 				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04 140.97 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05fd20fb-daa6-4f01-b46a-6666a484e5d6")
+		(property "Reference" "#PWR041"
+			(at 66.04 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 66.04 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eb1eaf30-1fbe-41e8-8416-275c24682802")
+		)
+		(instances
+			(project "flipper-thermal-camera"
+				(path "/20fef62b-baec-4471-9252-b8b8b3debd81"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
