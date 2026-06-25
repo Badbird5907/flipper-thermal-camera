@@ -16,6 +16,7 @@
  */
 #include "mlx90640_i2c.h"
 #include "mlx90640_api.h"
+#include <furi.h>
 #include <math.h>
 
 static void ExtractVDDParameters(uint16_t *eeData, paramsMLX90640 *mlx90640);
@@ -37,6 +38,10 @@ static float GetMedian(float *values, int n);
 static int IsPixelBad(uint16_t pixel,paramsMLX90640 *params);
 static int ValidateFrameData(uint16_t *frameData);
 static int ValidateAuxData(uint16_t *auxData);
+
+static float alphaTemp[MLX90640_PIXEL_NUM];
+static float ktaTemp[MLX90640_PIXEL_NUM];
+static float kvTemp[MLX90640_PIXEL_NUM];
   
 int MLX90640_DumpEE(uint8_t slaveAddr, uint16_t *eeData)
 {
@@ -878,7 +883,6 @@ static void ExtractAlphaParameters(uint16_t *eeData, paramsMLX90640 *mlx90640)
     uint8_t accRowScale;
     uint8_t accColumnScale;
     uint8_t accRemScale;
-    float alphaTemp[768];
     float temp;
     
 
@@ -1044,7 +1048,6 @@ static void ExtractKtaPixelParameters(uint16_t *eeData, paramsMLX90640 *mlx90640
     uint8_t ktaScale1;
     uint8_t ktaScale2;
     uint8_t split;
-    float ktaTemp[768];
     float temp;
     
     KtaRC[0] = (int8_t)MLX90640_MS_BYTE(eeData[54]);;
@@ -1119,7 +1122,6 @@ static void ExtractKvPixelParameters(uint16_t *eeData, paramsMLX90640 *mlx90640)
     int8_t KvReCe;
     uint8_t kvScale;
     uint8_t split;
-    float kvTemp[768];
     float temp;
 
     KvRoCo = MLX90640_NIBBLE4(eeData[52]);
@@ -1327,14 +1329,21 @@ static int ExtractDeviatingPixels(uint16_t *eeData, paramsMLX90640 *mlx90640)
     
     if(brokenPixCnt > 4)  
     {
+        FURI_LOG_E("MLX90640", "Too many broken pixels in EEPROM: %u", brokenPixCnt);
         warn = -MLX90640_BROKEN_PIXELS_NUM_ERROR;
     }         
     else if(outlierPixCnt > 4)  
     {
+        FURI_LOG_E("MLX90640", "Too many outlier pixels in EEPROM: %u", outlierPixCnt);
         warn = -MLX90640_OUTLIER_PIXELS_NUM_ERROR;
     }
     else if((brokenPixCnt + outlierPixCnt) > 4)  
     {
+        FURI_LOG_E(
+            "MLX90640",
+            "Too many bad pixels in EEPROM: broken=%u outlier=%u",
+            brokenPixCnt,
+            outlierPixCnt);
         warn = -MLX90640_BAD_PIXELS_NUM_ERROR;
     } 
     else

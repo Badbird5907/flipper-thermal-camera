@@ -4,12 +4,16 @@
 #include <furi_hal.h>
 #include <string.h>
 
+#define TAG "MLX90640"
+
 #define MLX90640_I2C_TIMEOUT_MS 100U
+#define MLX90640_I2C_MAX_READ_WORDS 16U
 #define MLX90640_READ_RETRIES   3U
 
 static paramsMLX90640 mlx90640_params;
 static bool mlx90640_params_ready = false;
 static float mlx90640_emissivity = 0.95f;
+static uint16_t mlx90640_frame_data[834];
 
 static uint16_t mlx90640_bswap16(uint16_t value) {
     return (uint16_t)((value << 8) | (value >> 8));
@@ -34,29 +38,59 @@ int MLX90640_I2CRead(
     uint16_t startAddress,
     uint16_t nMemAddressRead,
     uint16_t* data) {
-    uint8_t cmd[2] = {
-        (uint8_t)(startAddress >> 8),
-        (uint8_t)(startAddress & 0xFFU),
-    };
-
     furi_hal_i2c_acquire(&furi_hal_i2c_handle_external);
-    bool ok = furi_hal_i2c_trx(
-        &furi_hal_i2c_handle_external,
-        (uint8_t)(slaveAddr << 1),
-        cmd,
-        sizeof(cmd),
-        (uint8_t*)data,
-        nMemAddressRead * sizeof(uint16_t),
-        MLX90640_I2C_TIMEOUT_MS);
-    furi_hal_i2c_release(&furi_hal_i2c_handle_external);
 
-    if(ok) {
-        for(uint16_t i = 0; i < nMemAddressRead; i++) {
+    for(uint16_t offset = 0; offset < nMemAddressRead; offset += MLX90640_I2C_MAX_READ_WORDS) {
+        const uint16_t words_left = nMemAddressRead - offset;
+        const uint16_t words_to_read = (words_left > MLX90640_I2C_MAX_READ_WORDS) ?
+                                           MLX90640_I2C_MAX_READ_WORDS :
+                                           words_left;
+        const uint16_t read_address = startAddress + offset;
+        uint8_t cmd[2] = {
+            (uint8_t)(read_address >> 8),
+            (uint8_t)(read_address & 0xFFU),
+        };
+
+        const uint8_t address = (uint8_t)(slaveAddr << 1);
+        const bool tx_ok = furi_hal_i2c_tx_ext(
+            &furi_hal_i2c_handle_external,
+            address,
+            false,
+            cmd,
+            sizeof(cmd),
+            FuriHalI2cBeginStart,
+            FuriHalI2cEndAwaitRestart,
+            MLX90640_I2C_TIMEOUT_MS);
+        const bool rx_ok = tx_ok && furi_hal_i2c_rx_ext(
+            &furi_hal_i2c_handle_external,
+            address,
+            false,
+            (uint8_t*)&data[offset],
+            words_to_read * sizeof(uint16_t),
+            FuriHalI2cBeginRestart,
+            FuriHalI2cEndStop,
+            MLX90640_I2C_TIMEOUT_MS);
+
+        if(!rx_ok) {
+            furi_hal_i2c_release(&furi_hal_i2c_handle_external);
+            FURI_LOG_E(
+                TAG,
+                "I2C read failed: addr=0x%02X reg=0x%04X words=%u tx=%u",
+                slaveAddr,
+                read_address,
+                words_to_read,
+                tx_ok);
+            return -1;
+        }
+
+        for(uint16_t i = offset; i < offset + words_to_read; i++) {
             data[i] = mlx90640_bswap16(data[i]);
         }
     }
 
-    return ok ? 0 : -1;
+    furi_hal_i2c_release(&furi_hal_i2c_handle_external);
+
+    return 0;
 }
 
 int MLX90640_I2CWrite(uint8_t slaveAddr, uint16_t writeAddress, uint16_t data) {
@@ -88,7 +122,16 @@ bool mlx90640_read_eeprom(uint16_t eeprom[MLX90640_EEPROM_DUMP_NUM]) {
 }
 
 bool mlx90640_extract_params(uint16_t* eeprom, paramsMLX90640* params) {
-    if(MLX90640_ExtractParameters(eeprom, params) != MLX90640_NO_ERROR) {
+    const int status = MLX90640_ExtractParameters(eeprom, params);
+    if(status != MLX90640_NO_ERROR) {
+        FURI_LOG_E(
+            TAG,
+            "Parameter extraction failed: status=%d ee[0]=0x%04X ee[16]=0x%04X ee[32]=0x%04X ee[64]=0x%04X",
+            status,
+            eeprom[0],
+            eeprom[16],
+            eeprom[32],
+            eeprom[64]);
         return false;
     }
 
@@ -114,13 +157,12 @@ bool mlx90640_read_frame(float frame[MLX90640_PIXEL_COUNT]) {
         return false;
     }
 
-    uint16_t frame_data[834];
     bool got_frame = false;
 
     for(uint8_t subpage = 0; subpage < 2; subpage++) {
         int status = MLX90640_FRAME_DATA_ERROR;
         for(uint8_t attempt = 0; attempt < MLX90640_READ_RETRIES; attempt++) {
-            status = MLX90640_GetFrameData(MLX90640_I2C_ADDRESS, frame_data);
+            status = MLX90640_GetFrameData(MLX90640_I2C_ADDRESS, mlx90640_frame_data);
             if(status >= 0) {
                 break;
             }
@@ -130,8 +172,9 @@ bool mlx90640_read_frame(float frame[MLX90640_PIXEL_COUNT]) {
             return false;
         }
 
-        const float ta = MLX90640_GetTa(frame_data, &mlx90640_params);
-        MLX90640_CalculateTo(frame_data, &mlx90640_params, mlx90640_emissivity, ta - 8.0f, frame);
+        const float ta = MLX90640_GetTa(mlx90640_frame_data, &mlx90640_params);
+        MLX90640_CalculateTo(
+            mlx90640_frame_data, &mlx90640_params, mlx90640_emissivity, ta - 8.0f, frame);
         got_frame = true;
     }
 

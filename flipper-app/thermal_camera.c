@@ -18,6 +18,7 @@
 #define THERMAL_CAMERA_REFRESH_8HZ_REG 0x04U
 #define THERMAL_CAMERA_OVERLAY_MS      2000U
 #define THERMAL_CAMERA_UI_TICK_MS      125U
+#define THERMAL_CAMERA_SENSOR_STACK    (6U * 1024U)
 
 typedef struct {
     Gui* gui;
@@ -28,6 +29,10 @@ typedef struct {
     FuriMutex* frame_mutex;
 
     float frame[THERMAL_FRAME_PIXELS];
+    float sensor_frame[THERMAL_FRAME_PIXELS];
+    ThermalCameraRenderData render_data;
+    uint16_t eeprom[MLX90640_EEPROM_DUMP_NUM];
+    paramsMLX90640 sensor_params;
     bool has_frame;
     bool sensor_present;
     bool frozen;
@@ -75,20 +80,25 @@ static void thermal_camera_set_sensor_present(ThermalCameraApp* app, bool presen
 }
 
 static bool thermal_camera_init_sensor(ThermalCameraApp* app) {
-    uint16_t eeprom[MLX90640_EEPROM_DUMP_NUM];
-    paramsMLX90640 params;
-
     furi_hal_i2c_acquire(&furi_hal_i2c_handle_external);
     const bool ready = furi_hal_i2c_is_device_ready(
         &furi_hal_i2c_handle_external, (uint8_t)(MLX90640_I2C_ADDRESS << 1), 100);
     furi_hal_i2c_release(&furi_hal_i2c_handle_external);
 
     if(!ready) {
+        FURI_LOG_E(TAG, "MLX90640 probe failed at 0x%02X", MLX90640_I2C_ADDRESS);
         thermal_camera_set_sensor_present(app, false);
         return false;
     }
 
-    if(!mlx90640_read_eeprom(eeprom) || !mlx90640_extract_params(eeprom, &params)) {
+    if(!mlx90640_read_eeprom(app->eeprom)) {
+        FURI_LOG_E(TAG, "MLX90640 EEPROM read failed");
+        thermal_camera_set_sensor_present(app, false);
+        return false;
+    }
+
+    if(!mlx90640_extract_params(app->eeprom, &app->sensor_params)) {
+        FURI_LOG_E(TAG, "MLX90640 parameter extraction failed");
         thermal_camera_set_sensor_present(app, false);
         return false;
     }
@@ -100,6 +110,7 @@ static bool thermal_camera_init_sensor(ThermalCameraApp* app) {
 
     mlx90640_set_emissivity(emissivity);
     if(!mlx90640_configure(refresh)) {
+        FURI_LOG_E(TAG, "MLX90640 configure failed");
         thermal_camera_set_sensor_present(app, false);
         return false;
     }
@@ -110,7 +121,6 @@ static bool thermal_camera_init_sensor(ThermalCameraApp* app) {
 
 static int32_t thermal_camera_sensor_thread(void* context) {
     ThermalCameraApp* app = context;
-    float local_frame[THERMAL_FRAME_PIXELS];
     bool initialized = false;
     uint8_t configured_refresh = 0U;
 
@@ -132,6 +142,7 @@ static int32_t thermal_camera_sensor_thread(void* context) {
 
         if(refresh != configured_refresh) {
             if(!mlx90640_configure(refresh)) {
+                FURI_LOG_E(TAG, "MLX90640 refresh reconfigure failed");
                 initialized = false;
                 continue;
             }
@@ -145,7 +156,8 @@ static int32_t thermal_camera_sensor_thread(void* context) {
             continue;
         }
 
-        if(!mlx90640_read_frame(local_frame)) {
+        if(!mlx90640_read_frame(app->sensor_frame)) {
+            FURI_LOG_E(TAG, "MLX90640 frame read failed");
             initialized = false;
             thermal_camera_set_sensor_present(app, false);
             continue;
@@ -154,7 +166,7 @@ static int32_t thermal_camera_sensor_thread(void* context) {
         const uint32_t now = furi_get_tick();
 
         furi_check(furi_mutex_acquire(app->frame_mutex, FuriWaitForever) == FuriStatusOk);
-        memcpy(app->frame, local_frame, sizeof(app->frame));
+        memcpy(app->frame, app->sensor_frame, sizeof(app->frame));
         app->has_frame = true;
         app->sensor_present = true;
         if(app->last_frame_tick != 0U) {
@@ -176,31 +188,31 @@ static void thermal_camera_draw_callback(Canvas* canvas, void* model) {
     furi_assert(model);
 
     ThermalCameraApp* app = *(ThermalCameraApp**)model;
-    ThermalCameraRenderData data;
-    memset(&data, 0, sizeof(data));
+    ThermalCameraRenderData* data = &app->render_data;
+    memset(data, 0, sizeof(*data));
 
     const uint32_t now_tick = furi_get_tick();
     furi_check(furi_mutex_acquire(app->frame_mutex, FuriWaitForever) == FuriStatusOk);
-    memcpy(data.frame, app->frame, sizeof(data.frame));
-    data.has_frame = app->has_frame;
-    data.sensor_present = app->sensor_present;
-    data.frozen = app->frozen;
-    data.mode = app->mode;
-    data.emissivity = app->emissivity;
-    data.refresh_rate_hz = thermal_camera_reg_to_hz(thermal_camera_effective_refresh_reg(app));
-    data.battery_pct = furi_hal_power_get_pct();
-    data.fps = app->fps;
-    data.tick = thermal_camera_tick_to_ms(now_tick);
+    memcpy(data->frame, app->frame, sizeof(data->frame));
+    data->has_frame = app->has_frame;
+    data->sensor_present = app->sensor_present;
+    data->frozen = app->frozen;
+    data->mode = app->mode;
+    data->emissivity = app->emissivity;
+    data->refresh_rate_hz = thermal_camera_reg_to_hz(thermal_camera_effective_refresh_reg(app));
+    data->battery_pct = furi_hal_power_get_pct();
+    data->fps = app->fps;
+    data->tick = thermal_camera_tick_to_ms(now_tick);
     if(app->last_frame_tick != 0U) {
-        data.last_frame_age_ms = thermal_camera_tick_to_ms(now_tick - app->last_frame_tick);
+        data->last_frame_age_ms = thermal_camera_tick_to_ms(now_tick - app->last_frame_tick);
     }
     if(app->overlay_until_tick > now_tick) {
-        data.overlay_remaining_ms = thermal_camera_tick_to_ms(app->overlay_until_tick - now_tick);
+        data->overlay_remaining_ms = thermal_camera_tick_to_ms(app->overlay_until_tick - now_tick);
     }
     furi_check(furi_mutex_release(app->frame_mutex) == FuriStatusOk);
 
     canvas_clear(canvas);
-    thermal_display_render_mode(canvas, &data);
+    thermal_display_render_mode(canvas, data);
 }
 
 static bool thermal_camera_input_callback(InputEvent* event, void* context) {
@@ -286,7 +298,7 @@ static ThermalCameraApp* thermal_camera_app_alloc(void) {
     view_dispatcher_add_view(app->view_dispatcher, THERMAL_CAMERA_VIEW_MAIN, app->view);
 
     app->sensor_thread = furi_thread_alloc_ex(
-        "MLX90640Worker", 4096U, thermal_camera_sensor_thread, app);
+        "MLX90640Worker", THERMAL_CAMERA_SENSOR_STACK, thermal_camera_sensor_thread, app);
 
     return app;
 }
