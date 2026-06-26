@@ -5,6 +5,7 @@
 #include <gui/view_dispatcher.h>
 #include <input/input.h>
 #include <notification/notification_messages.h>
+#include <power/power_service/power.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -15,14 +16,18 @@
 
 #define THERMAL_CAMERA_VIEW_MAIN       0U
 #define THERMAL_CAMERA_REFRESH_4HZ_REG 0x03U
-#define THERMAL_CAMERA_REFRESH_8HZ_REG 0x04U
+#define THERMAL_CAMERA_REFRESH_8HZ_REG  0x04U
+#define THERMAL_CAMERA_REFRESH_16HZ_REG 0x05U
 #define THERMAL_CAMERA_OVERLAY_MS      2000U
 #define THERMAL_CAMERA_UI_TICK_MS      125U
 #define THERMAL_CAMERA_SENSOR_STACK    (6U * 1024U)
+#define THERMAL_CAMERA_5V_WAIT_MS      100U
+#define THERMAL_CAMERA_5V_WAIT_RETRIES 10U
 
 typedef struct {
     Gui* gui;
     NotificationApp* notification;
+    Power* power;
     ViewDispatcher* view_dispatcher;
     View* view;
     FuriThread* sensor_thread;
@@ -51,22 +56,73 @@ static uint32_t thermal_camera_tick_to_ms(uint32_t tick) {
 }
 
 static uint8_t thermal_camera_hz_to_reg(uint8_t hz) {
+    if(hz >= 16U) {
+        return THERMAL_CAMERA_REFRESH_16HZ_REG;
+    }
+
     return (hz >= 8U) ? THERMAL_CAMERA_REFRESH_8HZ_REG : THERMAL_CAMERA_REFRESH_4HZ_REG;
 }
 
 static uint8_t thermal_camera_reg_to_hz(uint8_t reg) {
+    if(reg >= THERMAL_CAMERA_REFRESH_16HZ_REG) {
+        return 16U;
+    }
+
     return (reg >= THERMAL_CAMERA_REFRESH_8HZ_REG) ? 8U : 4U;
 }
 
 static uint8_t thermal_camera_effective_refresh_reg(const ThermalCameraApp* app) {
-    return (app->mode == ThermalCameraModeLive) ? THERMAL_CAMERA_REFRESH_8HZ_REG :
-                                                  app->refresh_rate_reg;
+    return (app->mode == ThermalCameraModeLive) ? THERMAL_CAMERA_REFRESH_16HZ_REG :
+                                                   app->refresh_rate_reg;
 }
 
 static void thermal_camera_request_redraw(ThermalCameraApp* app) {
     ThermalCameraApp** model = view_get_model(app->view);
     UNUSED(model);
     view_commit_model(app->view, true);
+}
+
+static bool thermal_camera_enable_5v(ThermalCameraApp* app) {
+    furi_hal_power_suppress_charge_enter();
+    power_enable_otg(app->power, true);
+
+    for(uint8_t attempt = 0; attempt < THERMAL_CAMERA_5V_WAIT_RETRIES; attempt++) {
+        furi_hal_power_check_otg_status();
+
+        const bool requested = power_is_otg_enabled(app->power);
+        const bool enabled = furi_hal_power_is_otg_enabled();
+        const bool fault = furi_hal_power_check_otg_fault();
+
+        if(enabled && !fault) {
+            FURI_LOG_I(TAG, "5V rail enabled");
+            return true;
+        }
+
+        FURI_LOG_W(
+            TAG,
+            "Waiting for 5V rail: requested=%u enabled=%u fault=%u",
+            requested,
+            enabled,
+            fault);
+        furi_delay_ms(THERMAL_CAMERA_5V_WAIT_MS);
+    }
+
+    FURI_LOG_E(
+        TAG,
+        "5V rail did not enable: requested=%u enabled=%u fault=%u",
+        power_is_otg_enabled(app->power),
+        furi_hal_power_is_otg_enabled(),
+        furi_hal_power_check_otg_fault());
+    return false;
+}
+
+static void thermal_camera_disable_5v(ThermalCameraApp* app) {
+    if(app->power) {
+        power_enable_otg(app->power, false);
+    } else {
+        furi_hal_power_disable_otg();
+    }
+    furi_hal_power_suppress_charge_exit();
 }
 
 static void thermal_camera_set_sensor_present(ThermalCameraApp* app, bool present) {
@@ -178,7 +234,7 @@ static int32_t thermal_camera_sensor_thread(void* context) {
         app->last_frame_tick = now;
         furi_check(furi_mutex_release(app->frame_mutex) == FuriStatusOk);
 
-        furi_delay_ms(thermal_camera_reg_to_hz(configured_refresh) >= 8U ? 125U : 250U);
+        furi_delay_ms(1U);
     }
 
     return 0;
@@ -247,7 +303,13 @@ static bool thermal_camera_input_callback(InputEvent* event, void* context) {
             app->overlay_until_tick = now + furi_ms_to_ticks(THERMAL_CAMERA_OVERLAY_MS);
             handled = true;
         } else if(event->key == InputKeyLeft || event->key == InputKeyRight) {
-            app->refresh_rate_hz = (app->refresh_rate_hz == 4U) ? 8U : 4U;
+            if(app->refresh_rate_hz == 4U) {
+                app->refresh_rate_hz = 8U;
+            } else if(app->refresh_rate_hz == 8U) {
+                app->refresh_rate_hz = 16U;
+            } else {
+                app->refresh_rate_hz = 4U;
+            }
             app->refresh_rate_reg = thermal_camera_hz_to_reg(app->refresh_rate_hz);
             handled = true;
         }
@@ -276,12 +338,13 @@ static ThermalCameraApp* thermal_camera_app_alloc(void) {
 
     app->gui = furi_record_open(RECORD_GUI);
     app->notification = furi_record_open(RECORD_NOTIFICATION);
+    app->power = furi_record_open(RECORD_POWER);
     app->frame_mutex = furi_mutex_alloc(FuriMutexTypeNormal);
     app->view_dispatcher = view_dispatcher_alloc();
     app->view = view_alloc();
     app->emissivity = 0.95f;
-    app->refresh_rate_hz = 4U;
-    app->refresh_rate_reg = THERMAL_CAMERA_REFRESH_4HZ_REG;
+    app->refresh_rate_hz = 8U;
+    app->refresh_rate_reg = THERMAL_CAMERA_REFRESH_8HZ_REG;
     app->mode = ThermalCameraModeHeat;
 
     view_allocate_model(app->view, ViewModelTypeLocking, sizeof(ThermalCameraApp*));
@@ -317,6 +380,7 @@ static void thermal_camera_app_free(ThermalCameraApp* app) {
 
     furi_mutex_free(app->frame_mutex);
 
+    furi_record_close(RECORD_POWER);
     furi_record_close(RECORD_NOTIFICATION);
     furi_record_close(RECORD_GUI);
 
@@ -332,17 +396,18 @@ int32_t thermal_camera_app(void* p) {
     view_dispatcher_attach_to_gui(app->view_dispatcher, app->gui, ViewDispatcherTypeFullscreen);
     view_dispatcher_switch_to_view(app->view_dispatcher, THERMAL_CAMERA_VIEW_MAIN);
 
-    furi_hal_power_suppress_charge_enter();
-    furi_hal_power_enable_otg();
-
-    furi_thread_start(app->sensor_thread);
+    const bool power_ready = thermal_camera_enable_5v(app);
+    if(power_ready) {
+        furi_thread_start(app->sensor_thread);
+    }
     view_dispatcher_run(app->view_dispatcher);
 
     app->stop_requested = true;
-    furi_thread_join(app->sensor_thread);
+    if(power_ready) {
+        furi_thread_join(app->sensor_thread);
+    }
 
-    furi_hal_power_disable_otg();
-    furi_hal_power_suppress_charge_exit();
+    thermal_camera_disable_5v(app);
 
     thermal_camera_app_free(app);
 

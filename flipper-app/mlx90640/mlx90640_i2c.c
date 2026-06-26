@@ -7,13 +7,14 @@
 #define TAG "MLX90640"
 
 #define MLX90640_I2C_TIMEOUT_MS 100U
-#define MLX90640_I2C_MAX_READ_WORDS 16U
+#define MLX90640_I2C_MAX_READ_WORDS 32U
 #define MLX90640_READ_RETRIES   3U
 
 static paramsMLX90640 mlx90640_params;
 static bool mlx90640_params_ready = false;
 static float mlx90640_emissivity = 0.95f;
 static uint16_t mlx90640_frame_data[834];
+static uint8_t mlx90640_subpages_ready = 0U;
 
 static uint16_t mlx90640_bswap16(uint16_t value) {
     return (uint16_t)((value << 8) | (value >> 8));
@@ -137,6 +138,7 @@ bool mlx90640_extract_params(uint16_t* eeprom, paramsMLX90640* params) {
 
     memcpy(&mlx90640_params, params, sizeof(mlx90640_params));
     mlx90640_params_ready = true;
+    mlx90640_subpages_ready = 0U;
     return true;
 }
 
@@ -157,9 +159,9 @@ bool mlx90640_read_frame(float frame[MLX90640_PIXEL_COUNT]) {
         return false;
     }
 
-    bool got_frame = false;
+    const bool needs_full_frame = mlx90640_subpages_ready != 0x03U;
 
-    for(uint8_t subpage = 0; subpage < 2; subpage++) {
+    do {
         int status = MLX90640_FRAME_DATA_ERROR;
         for(uint8_t attempt = 0; attempt < MLX90640_READ_RETRIES; attempt++) {
             status = MLX90640_GetFrameData(MLX90640_I2C_ADDRESS, mlx90640_frame_data);
@@ -175,13 +177,13 @@ bool mlx90640_read_frame(float frame[MLX90640_PIXEL_COUNT]) {
         const float ta = MLX90640_GetTa(mlx90640_frame_data, &mlx90640_params);
         MLX90640_CalculateTo(
             mlx90640_frame_data, &mlx90640_params, mlx90640_emissivity, ta - 8.0f, frame);
-        got_frame = true;
-    }
+        mlx90640_subpages_ready |= (uint8_t)(1U << (mlx90640_frame_data[833] & 1U));
+    } while(needs_full_frame && mlx90640_subpages_ready != 0x03U);
 
     MLX90640_BadPixelsCorrection(
         mlx90640_params.brokenPixels, frame, 1, &mlx90640_params);
     MLX90640_BadPixelsCorrection(
         mlx90640_params.outlierPixels, frame, 1, &mlx90640_params);
 
-    return got_frame;
+    return mlx90640_subpages_ready == 0x03U;
 }

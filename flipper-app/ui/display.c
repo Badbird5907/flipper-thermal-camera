@@ -49,7 +49,10 @@ void thermal_display_draw_temp(Canvas* canvas, int x, int y, float temp) {
 static void thermal_display_compute_stats(const float* frame, ThermalStats* stats) {
     stats->min = frame[0];
     stats->max = frame[0];
-    stats->spot = frame[(11U * THERMAL_FRAME_WIDTH) + 15U];
+    const size_t spot_x = CROSS_X / 3U;
+    const size_t spot_display_y = CROSS_Y / 2U;
+    const size_t spot_sensor_y = THERMAL_FRAME_HEIGHT - 1U - spot_display_y;
+    stats->spot = frame[(spot_sensor_y * THERMAL_FRAME_WIDTH) + spot_x];
 
     for(size_t i = 1; i < THERMAL_FRAME_PIXELS; i++) {
         if(frame[i] < stats->min) {
@@ -116,8 +119,9 @@ static void thermal_display_draw_image(
     bool iso,
     bool live) {
     for(uint8_t sy = 0; sy < THERMAL_FRAME_HEIGHT; sy++) {
+        const uint8_t source_y = THERMAL_FRAME_HEIGHT - 1U - sy;
         for(uint8_t sx = 0; sx < THERMAL_FRAME_WIDTH; sx++) {
-            uint8_t value = stats->norm[(sy * THERMAL_FRAME_WIDTH) + sx];
+            uint8_t value = stats->norm[(source_y * THERMAL_FRAME_WIDTH) + sx];
             const bool iso_pixel = iso && ((value > 108U) && (value < 148U));
 
             if(live) {
